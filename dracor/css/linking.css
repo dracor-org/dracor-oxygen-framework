@@ -117,6 +117,10 @@ sp:before {
     content: "@who: "oxy_combobox( edit, "@who", editable, false, values, oxy_xpath("concat('none,','#',string-join(./ancestor::TEI//particDesc//person/@xml:id/string(),',#'))"), labels, oxy_xpath("concat('none,','#',string-join(./ancestor::TEI//particDesc//person/@xml:id/string(),',#'))"))
 }
 
+body {
+    margin-left:2em;
+}
+
 body > div > head {
     display:block;
     font-weight:bold;
