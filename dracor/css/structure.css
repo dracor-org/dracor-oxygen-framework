@@ -48,4 +48,11 @@ div {
 
 p {
     display:block;
+    margin:1em;
+    border:1px dotted silver;
+}
+
+stage {
+    font-style:italic;
+    display:inline;
 }
