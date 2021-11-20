@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="20.1">
+    <meta>
+        <filters directoryPatterns="" filePatterns="dracor-oxygen-framework.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options>
+            <serialized version="20.1" xml:space="preserve">
+                <serializableOrderedMap>
+                    <entry>
+                        <String>additional.frameworks.directories</String>
+                        <String-array>
+                            <String>/Users/ingoboerner/Projekte/wdr/workflow/framework</String>
+                            <String>/Users/ingoboerner/Projekte/schnitzler-werke-framework</String>
+                            <String>/Users/ingoboerner/Projekte/legalkraus/legalkraus-framework</String>
+                            <String>/Users/ingoboerner/Projekte/schnitzler-orte/framework</String>
+                            <String>${pd}</String>
+                        </String-array>
+                    </entry>
+                    <entry>
+                        <String>key.editor.document.type.custom.locations.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                </serializableOrderedMap>
+            </serialized>
+        </options>
+    </meta>
+    <projectTree name="dracor-oxygen-framework.xpr">
+        <folder path="."/>
+    </projectTree>
+</project>
