@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main"></title>
+        <title type="sub"></title>
+        <author>
+          <persName>
+            <forename></forename>
+            <surname></surname>
+          </persName>
+          <idno type="wikidata"></idno>
+          <idno type="pnd"></idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher xml:id="dracor">DraCor</publisher>
+        <idno type="URL">https://dracor.org</idno>
+        <idno type="dracor" xml:base="https://dracor.org/id/"></idno>
+        <availability>
+          <licence>
+            <ab>CC0 1.0</ab>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+          </licence>
+        </availability>
+        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/"></idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digitalSource">
+          <name></name>
+          <idno type="URL"></idno>
+          <availability>
+            <licence>
+              <ab>CC-BY-3.0</ab>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode"
+                >Lizenzvertrag</ref>
+            </licence>
+          </availability>
+          <bibl type="originalSource">
+            <title>Autor: Title. Place: Publisher, 0000.</title>
+            <date type="print" when=""></date>
+            <date type="premiere"/>
+            <date type="written" when=""></date>
+          </bibl>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="person-id" sex="">
+            <persName></persName>
+          </person>
+          <personGrp xml:id="group-id" sex="">
+            <name></name>
+          </personGrp>
+          <listRelation type="">
+            <relation name="" active="#" passive="#"/>
+          </listRelation>
+        </listPerson>
+      </particDesc>
+      <textClass>
+        <keywords>
+          <term type="genreTitle"/>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="0000-00-00"></change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="front">
+        <head></head>
+      </div>
+      <!-- ... -->
+      <div type="Dramatis_Personae">
+        <castList>
+          <head>Personen.</head>
+          <castItem>Luther.</castItem>
+          <castGroup>
+            <castItem></castItem>
+            <castItem></castItem>
+            <roleDesc></roleDesc>
+          </castGroup>
+        </castList>
+      </div>
+      <set>
+        <p>Setting</p>
+      </set>
+    </front>
+    <body>
+      <div type="act">
+        <head>I. Akt.</head>
+        <stage>Stage</stage>
+        <div type="scene">
+          <head>1. Scene.</head>
+          <stage>Stage</stage>
+          <sp who="#">
+            <speaker>SPEAKER</speaker>
+            <stage>Stage</stage>
+            <p>Text</p>
+          </sp>
+        </div>
+          <trailer>Ende.</trailer>
+        </div>
+    </body>
+  </text>
+</TEI>
