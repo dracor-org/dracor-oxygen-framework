@@ -1,0 +1,15 @@
+/*  @import "css-tei-framework/tei_oxygen.css"; */
+
+/* Dracor Editing View */
+
+TEI {
+    display:block;
+}
+
+teiHeader {
+    display:block;
+}
+
+body {
+    display:block;
+}
