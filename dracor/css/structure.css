@@ -1,0 +1,51 @@
+/*  @import "css-tei-framework/tei_oxygen.css"; */
+
+/* Dracor Structuring View */
+
+TEI {
+    display:block;
+}
+
+teiHeader {
+    display:none;
+}
+
+front {
+    display:block;
+}
+
+body {
+    margin:2em;
+    display:block;
+    border:1px dotted gray;
+    padding:1em;
+}
+
+sp {
+    display:block;
+    margin-top:1em;
+    border:1px dotted orange;
+}
+
+speaker {
+    display:block;
+    font-weight:bold;
+}
+
+div {
+    display:block;
+}
+
+[type=act] {
+    border:1px dotted pink;
+    padding:1em;
+}
+
+[type=scene] {
+    border:1px dotted green;
+    padding:1em;
+}
+
+p {
+    display:block;
+}
