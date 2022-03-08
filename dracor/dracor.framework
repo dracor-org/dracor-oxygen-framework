@@ -876,7 +876,10 @@
 						</validationScenario-array>
 					</field>
 					<field name="defaultValidationScenarios">
-						<null/>
+						<list>
+							<String>dracor</String>
+							<String>dracor-readyness-check</String>
+						</list>
 					</field>
 					<field name="defaultTransformationScenarios">
 						<null/>
