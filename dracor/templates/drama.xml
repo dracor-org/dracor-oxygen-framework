@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="" xml:lang="">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -18,32 +18,23 @@
       <publicationStmt>
         <publisher xml:id="dracor">DraCor</publisher>
         <idno type="URL">https://dracor.org</idno>
-        <idno type="dracor" xml:base="https://dracor.org/id/"></idno>
         <availability>
           <licence>
             <ab>CC0 1.0</ab>
             <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
           </licence>
         </availability>
-        <idno type="wikidata" xml:base="http://www.wikidata.org/entity/"></idno>
       </publicationStmt>
       <sourceDesc>
         <bibl type="digitalSource">
           <name></name>
           <idno type="URL"></idno>
-          <availability>
-            <licence>
-              <ab>CC-BY-3.0</ab>
-              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode"
-                >Lizenzvertrag</ref>
-            </licence>
+          <availability status="free">
+            <p>In the public domain.</p>
           </availability>
           <bibl type="originalSource">
             <title>Autor: Title. Place: Publisher, 0000.</title>
-            <date type="print" when=""></date>
-            <date type="premiere"/>
-            <date type="written" when=""></date>
-          </bibl>
+            </bibl>
         </bibl>
       </sourceDesc>
     </fileDesc>
@@ -73,6 +64,22 @@
       </listChange>
     </revisionDesc>
   </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="">
+        <desc/>
+      </event>
+      <event type="premiere" when="">
+        <desc/>
+      </event>
+      <event type="written" when="">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/" passive="http://www.wikidata.org/entity/"/>
+    </listRelation>
+  </standOff>
   <text>
     <front>
       <div type="front">
