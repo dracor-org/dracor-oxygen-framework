@@ -859,7 +859,7 @@
 														<Integer>7</Integer>
 													</field>
 													<field name="uri">
-														<String>https://raw.githubusercontent.com/dracor-org/dracor-schema/main/schematron/dracor.sch</String>
+														<String>https://raw.githubusercontent.com/dracor-org/dracor-schema/main/dracor.sch</String>
 													</field>
 												</validationUnitSchema>
 											</field>
