@@ -36,10 +36,10 @@
 								<cssFile-array>
 									<cssFile>
 										<field name="href">
-											<String>https://raw.githubusercontent.com/dracor-org/gerdracor/main/css/tei.css</String>
+											<String>${framework}/css/gerdracor_tei.css</String>
 										</field>
 										<field name="title">
-											<String>Franks CSS</String>
+											<String>GerDraCor Custom CSS</String>
 										</field>
 										<field name="alternate">
 											<Boolean>true</Boolean>
