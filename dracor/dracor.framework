@@ -283,7 +283,7 @@
 											<String>Mark as &lt;div type="scene"></String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String>${framework}/images/scene.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String></String>
@@ -329,7 +329,7 @@
 											<String>Mark as &lt;div type="act"></String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String>${framework}/images/act.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String></String>
