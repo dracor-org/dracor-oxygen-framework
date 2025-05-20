@@ -15,7 +15,14 @@
 						<String>dracor</String>
 					</field>
 					<field name="schemaDescriptor">
-						<null/>
+						<docTypeSchema>
+							<field name="type">
+								<Integer>6</Integer>
+							</field>
+							<field name="uri">
+								<String>https://dracor.org/schema.rng</String>
+							</field>
+						</docTypeSchema>
 					</field>
 					<field name="classpath">
 						<String-array/>
@@ -606,7 +613,7 @@
 									<null/>
 								</field>
 								<field name="name">
-									<String>CAMENA TEI 2 DraCor</String>
+									<String>CAMENA TEI 2 DraCor (deprecated)</String>
 								</field>
 								<field name="baseURL">
 									<String></String>
@@ -778,7 +785,7 @@
 											<field name="validationType">
 												<validationUnitType>
 													<field name="validationInputType">
-														<String>text/any</String>
+														<String>text/xml</String>
 													</field>
 												</validationUnitType>
 											</field>
@@ -788,7 +795,7 @@
 											<field name="validationEngine">
 												<validationEngine>
 													<field name="engineType">
-														<String>&lt;Default engine></String>
+														<String>Saxon-EE</String>
 													</field>
 													<field name="allowsAutomaticValidation">
 														<Boolean>true</Boolean>
@@ -802,7 +809,20 @@
 												<null/>
 											</field>
 											<field name="validationSchema">
-												<null/>
+												<validationUnitSchema>
+													<field name="dtdSchemaPublicID">
+														<null/>
+													</field>
+													<field name="schematronPhase">
+														<null/>
+													</field>
+													<field name="type">
+														<Integer>6</Integer>
+													</field>
+													<field name="uri">
+														<String>https://dracor.org/schema.rng</String>
+													</field>
+												</validationUnitSchema>
 											</field>
 											<field name="validationAdvancedSettings">
 												<null/>
@@ -856,10 +876,10 @@
 														<null/>
 													</field>
 													<field name="type">
-														<Integer>7</Integer>
+														<Integer>6</Integer>
 													</field>
 													<field name="uri">
-														<String>https://raw.githubusercontent.com/dracor-org/dracor-schema/main/dracor.sch</String>
+														<String>https://staging.dracor.org/schema.rng</String>
 													</field>
 												</validationUnitSchema>
 											</field>
@@ -873,16 +893,13 @@
 									<String>Validation_scenario</String>
 								</field>
 								<field name="name">
-									<String>dracor-readyness-check</String>
+									<String>dracor (staging)</String>
 								</field>
 							</validationScenario>
 						</validationScenario-array>
 					</field>
 					<field name="defaultValidationScenarios">
-						<list>
-							<String>dracor</String>
-							<String>dracor-readyness-check</String>
-						</list>
+						<null/>
 					</field>
 					<field name="defaultTransformationScenarios">
 						<null/>
