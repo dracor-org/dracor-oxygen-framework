@@ -1,0 +1,491 @@
+/*  NeoLatDraCor Metadata  */
+
+@namespace oxy url('http://www.oxygenxml.com/extensions/author');
+
+/*  ID */
+TEI {
+    display: block;
+    margin-left:20px;
+    content: "@xml:id: " oxy_textfield( edit, "@xml:id", values, " ", color, "black", columns, 40) "\A" "@prev: " oxy_textfield( edit, "@prev", values, " ", color, "black", columns, 40) "\A" "@next: " oxy_textfield( edit, "@next", values, " ", color, "black", columns, 40);
+}
+
+TEI:before {
+    content:"ID";
+    display:block;
+    font-weight:bold;
+    margin-top:2em;
+    border-bottom:2px solid gray;
+    margin-bottom:1em;
+    font-family:sans-serif;
+    color:gray;
+}
+
+
+
+teiHeader {
+    display:block;
+}
+
+
+titleStmt {
+    display:block;
+}
+
+/* title meta */
+titleStmt:before {
+    content:"Title";
+    display:block;
+    font-weight:bold;
+    margin-top:2em;
+    border-bottom:2px solid gray;
+    margin-bottom:1em;
+    font-family:sans-serif;
+    color:gray;
+}
+
+/* Title */
+titleStmt title[type=main] {
+    display:block;
+    font-size:xx-large;
+    
+}
+
+
+titleStmt title[type=sub]:before {
+    display:inline;
+    content:"Subtitle: ";
+    font-family:sans-serif;
+    font-size:small;
+    color:gray;
+    margin-right:3em;
+}
+
+
+/* Autor */
+
+titleStmt author:before {
+    content:"Author";
+    display:block;
+    font-weight:bold;
+    margin-top:2em;
+    border-bottom:2px solid gray;
+    font-family:sans-serif;
+    color:gray;
+}
+
+
+titleStmt author:after {
+    /* content:oxy_button(actionID, 'wdr_meta_addAuthor', showIcon, false) " " oxy_button(actionID, 'wdr_meta_deleteCurrentElement', showIcon, true); */
+    display:block;
+}
+
+titleStmt author {
+    display:block;
+}
+
+titleStmt author name {
+    display:block;
+    font-size:large;
+}
+
+titleStmt author name forename {
+    display:block;
+}
+
+titleStmt author name forename:before {
+display:inline;
+    content:"Forename:    ";
+    font-family:sans-serif;
+    font-size:small;
+    color:gray;
+    margin-right:3em;
+}
+
+titleStmt author name surname {
+    display:block;
+}
+
+titleStmt author name surname:before {
+    display:inline;
+    content:"Surname: ";
+    font-family:sans-serif;
+    font-size:small;
+    color:gray;
+    margin-right:3em;
+}
+
+
+titleStmt author idno[type=ORCID]:after {
+    display:inline;
+    font-family:sans-serif;
+    font-size:small;
+    color:blue;
+    text-decoration:underline;
+    content:' [ansehen]';
+    link:oxy_xpath(" concat('https://orcid.org/', ./text()/string()) ");
+    margin-left:2em;
+}
+
+/* Publication Metadata */
+
+publicationStmt {
+    display:block;
+}
+
+publicationStmt:before {
+    content:"Metadata on Publication";
+    display:block;
+    font-weight:bold;
+    margin-top:2em;
+    border-bottom:2px solid gray;
+    margin-bottom:1em;
+    font-family:sans-serif;
+    color:gray;
+}
+
+availability {
+    display:block;
+}
+
+publisher {
+    display:block;
+}
+
+
+publisher name {
+    display:block;
+    font-weight:bold;
+}
+
+publisher address {
+    display:block;
+}
+
+publicationStmt date {
+  display:block;
+}
+
+publicationStmt date:before {
+  display:inline;
+  content:"Publication year:";
+    font-family:sans-serif;
+    font-size:small;
+    color:gray;
+    margin-right:3em;
+}
+
+publicationStmt idno {
+    display:block;
+}
+
+
+publicationStmt idno {
+    display:block;
+}
+
+pubPlace:before {
+    display:inline;
+    content:"Place of Publication: ";
+    font-family:sans-serif;
+    font-size:small;
+    color:gray;
+    margin-right:3em;
+}
+
+licence:before {
+    display:inline;
+    content:"Licence: ";
+    font-family:sans-serif;
+    font-size:small;
+    color:gray;
+    margin-right:3em;
+}
+
+/* 
+publicationStmt idno[subtype=legalkraus]:before {
+    display:inline;
+  content:"legalkraus-URI: ";
+    font-family:sans-serif;
+    font-size:small;
+    color:gray;
+    margin-right:3em;
+}
+
+publicationStmt idno[subtype=krausonline]:before {
+    display:inline;
+  content:"Kraus-Online: ";
+    font-family:sans-serif;
+    font-size:small;
+    color:gray;
+    margin-right:3em;
+}
+
+publicationStmt idno[subtype=transkribus]:before {
+    display:inline;
+  content:"Transkribus-ID: ";
+    font-family:sans-serif;
+    font-size:small;
+    color:gray;
+    margin-right:3em;
+}
+*/
+
+/* profileDesc */
+profileDesc {
+    display:block;
+}
+
+
+profileDesc:after {
+    display:block;
+    content:"Add additional metadata (don't use this at the moment!): ";
+    -oxy-append-content: "\A" oxy_button(actionID, 'add_handNotes', showIcon, true);
+    margin-top:2em;
+    margin-bottom:1em;
+    font-family:sans-serif;
+    color:gray;
+}
+
+
+
+/* Sprache */
+profileDesc langUsage {
+    display:block;
+}
+
+profileDesc langUsage:before {
+   content:"Language";
+    display:block;
+    font-weight:bold;
+    margin-top:2em;
+    border-bottom:2px solid gray;
+    margin-bottom:1em;
+    font-family:sans-serif;
+    color:gray;
+}
+
+
+
+profileDesc langUsage language {
+    display:inline;
+    content:oxy_combobox( edit, "@ident", editable, false, values, ",de, en", labels, "Sprache wählen, Deutsch, Englisch")
+}
+
+/* Keywords */
+textClass {
+    display:block;
+}
+
+textClass:before {
+    content:"Keywords";
+    display:block;
+    font-weight:bold;
+    margin-top:2em;
+    border-bottom:2px solid gray;
+    margin-bottom:1em;
+    font-family:sans-serif;
+    color:gray;
+}
+
+keywords term {
+    display:inline-block;
+    padding:5px;
+    font-weight:bold;
+    font-style:normal;
+    color:white;
+    background-color:blue;
+    margin-right:10px;
+}
+
+keywords term:after {
+    display:inline;
+    content:  " " oxy_button(actionID, 'deleteCurrentElement', showIcon, true);
+
+}
+
+keywords:after {
+    display:block;
+    content:oxy_button(actionID, 'wdr_meta_addKeyword', showIcon, false); 
+}
+
+particDesc:before {
+    content:"Characters";
+    display:block;
+    font-weight:bold;
+    margin-top:2em;
+    border-bottom:2px solid gray;
+    margin-bottom:1em;
+    font-family:sans-serif;
+    color:gray;
+}
+
+/* correspDesc */
+correspDesc:before {
+    content:"CorrespDesc (ignore)";
+    display:block;
+    font-weight:bold;
+    margin-top:2em;
+    border-bottom:2px solid gray;
+    margin-bottom:1em;
+    font-family:sans-serif;
+    color:gray;
+}
+
+
+handNotes:before {
+    content:"Hands";
+    display:block;
+    font-weight:bold;
+    margin-top:2em;
+    border-bottom:2px solid gray;
+    margin-bottom:1em;
+    font-family:sans-serif;
+    color:gray;
+}
+
+
+
+/* revisionDesc */
+revisionDesc {
+    display:block;
+}
+
+revisionDesc:before {
+    content:"Revision History";
+    display:block;
+    font-weight:bold;
+    margin-top:2em;
+    border-bottom:2px solid gray;
+    margin-bottom:1em;
+    font-family:sans-serif;
+    color:gray;
+}
+
+revisionDesc listChange {
+    display:block;
+}
+
+/* 
+revisionDesc listChange:before {
+    display:block; 
+    content:oxy_button(actionID, 'wdr_meta_addchange', showIcon, false);
+    margin-bottom:2em;
+}
+*/
+
+revisionDesc listChange change {
+    display:list-item;
+    margin-left:3em;
+    content: oxy_combobox( edit, "#text", editable, false, values, ",Converted from a Word Document, Final Corrections", labels, "Schritt wählen, Konvertierung aus Word, Endkorrektur") " " oxy_datePicker(columns, 16, edit, "@when", format, "yyyy-MM-dd");
+    
+}
+
+/* 
+revisionDesc listChange change:after {
+    display:inline;
+    margin-left:3em;
+    content: oxy_button(actionID, 'wdr_meta_deleteCurrentElement', showIcon, true);
+    
+}
+*/
+
+/* sourceDesc */
+
+sourceDesc:before {
+    content:"Source";
+    display:block;
+    font-weight:bold;
+    margin-top:2em;
+    border-bottom:2px solid gray;
+    margin-bottom:1em;
+    font-family:sans-serif;
+    color:gray;
+}
+
+/* 
+sourceDesc > p {
+    display:block;
+    content: oxy_button(actionID, 'legalkraus_sourceDesc-p_to_listWit', showIcon, false);
+}
+*/
+
+sourceDesc {
+    display:block;
+}
+
+
+/* 
+witness {
+    display:block;
+    content: oxy_textfield( edit, "@xml:id", values, " ", color, "black", columns, 25)  " Faksimile " oxy_combobox( edit, "@facs", editable, false, values, oxy_xpath("concat('none,','#',string-join(./ancestor::TEI//facsimile/@xml:id/string(),',#'))"), labels, oxy_xpath("concat('none,','#',string-join(./ancestor::TEI//facsimile/@xml:id/string(),',#'))")) ;
+    margin-bottom:2em;
+}
+*/ 
+
+/*  
+witness:before {
+    display:inline;
+    content:"Textzeuge " oxy_xpath(" count(./preceding::witness) + 1 ") ": ";
+    font-family:sans-serif;
+    font-size:small;
+    color:gray;
+    margin-right:3em;
+}
+*/
+
+/* Datierung <creation> */
+
+creation:before {
+    content:"Date";
+    display:block;
+    font-weight:bold;
+    margin-top:2em;
+    border-bottom:2px solid gray;
+    margin-bottom:1em;
+    font-family:sans-serif;
+    color:gray;
+}
+
+creation date[type=sortDate]:before {
+    display:inline;
+    content:"Sort date: ";
+    font-family:sans-serif;
+    font-size:small;
+    color:gray;
+    margin-right:3em;
+}
+
+creation date[type=sortDate] {
+    display:block;
+    content: oxy_datePicker(columns, 16, edit, "@when-iso", format, "yyyy-MM-dd");
+    
+    
+}
+
+creation date[source=krausonline]:before {
+    display:inline;
+    content:"Kraus-online: ";
+    font-family:sans-serif;
+    font-size:small;
+    color:gray;
+    margin-right:3em;
+}
+
+creation date[source=krausonline] {
+    display:block;
+    
+}
+
+
+
+
+facsimile, text {
+    display:none;
+}
+
+
+
+/* XML-Kommentare */
+oxy|comment {
+    display:none !important;
+}
