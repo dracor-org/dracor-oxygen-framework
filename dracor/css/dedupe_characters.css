@@ -1,0 +1,155 @@
+/*  @import "css-tei-framework/tei_oxygen.css"; */
+
+/* Character Deduplication */
+
+TEI {
+    display:block;
+}
+
+TEI::before {
+    content:"Character Deduplication";
+    font-size:large;
+}
+
+teiHeader {
+    display:block;
+}
+
+titleStmt {
+    display:none;
+}
+
+fileDesc {
+    display:none;
+}
+
+publicationStmt {
+    display:none;
+}
+
+sourceDesc {
+    display: none;
+}
+
+profileDesc {
+    display:block;
+    padding:2em;
+    
+}
+
+particDesc:before {
+    display:block;
+    content:"particDesc";
+    font-weight:bold;
+    font-size:large;
+}
+
+particDesc:after {
+    content: "Here comes a nice button to run a XSLT"
+}
+
+person, personGrp {
+    margin:1em;
+    display:block;
+}
+
+personGrp:after {
+    display:block;
+    content: "@xml:id: " oxy_textfield( edit, "@xml:id", values, " ", color, "black", columns, 30) "\A @sex:" oxy_combobox( edit, "@sex", editable, false, values, "UNKNOWN, FEMALE, MALE", labels, "UNKNOWN, FEMALE, MALE");
+    color:gray;
+}
+
+person:after {
+    display:block;
+    content: "@xml:id: " oxy_textfield( edit, "@xml:id", values, " ", color, "black", columns, 30) "\A @sameAs: "oxy_combobox( edit, "@sameAs", editable, false, values, oxy_xpath("concat('none,','#',string-join(./ancestor::TEI//particDesc//person/@xml:id/string(),',#'))"), labels, oxy_xpath("concat('none,','#',string-join(./ancestor::TEI//particDesc//person/@xml:id/string(),',#'))"));
+    color:gray;
+}
+
+person[sameAs] {
+    background-color:#ffcccc;
+}
+
+persName {
+    display:block;
+    color:black;
+}
+
+revisionDesc {
+    display:none;
+}
+
+div[type=Dramatis_Personae] {
+    display:block;
+    padding:2em;
+}
+
+div[type=Dramatis_Personae]:before {
+    display:block;
+    content:"Dramatis personae";
+    font-weight:bold;
+    font-size:large;
+}
+
+set {
+    display:none;
+}
+
+castItem {
+    display:block;
+}
+
+body {
+    display:block;
+    margin-left:1em;
+}
+
+
+sp {
+    display:block;
+    margin-top:1em;
+}
+
+speaker {
+    display:block;
+    font-weight:bold;
+    color:purple;
+}
+
+sp > p {
+    display:block;
+    font-size:small;
+}
+
+sp > stage {
+    font-size:small;
+
+}
+
+sp:before {
+    display:block;
+    content: "@who: "oxy_combobox( edit, "@who", editable, false, values, oxy_xpath("concat('none,','#',string-join(./ancestor::TEI//particDesc//person/@xml:id/string(),',#'))"), labels, oxy_xpath("concat('none,','#',string-join(./ancestor::TEI//particDesc//person/@xml:id/string(),',#'))"))
+}
+
+body {
+    margin-left:2em;
+}
+
+body > div > head {
+    display:block;
+    font-weight:bold;
+    font-size:large;
+}
+
+body > div {
+    margin-top:2em;
+}
+
+body > div > div {
+    margin-top:1em;
+}
+
+body > div > div > head {
+    display:block;
+    font-weight:bold;
+    font-size:large;
+}
