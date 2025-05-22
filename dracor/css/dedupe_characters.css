@@ -45,7 +45,7 @@ particDesc:before {
 }
 
 particDesc:after {
-    content: "Here comes a nice button to run a XSLT"
+    content:"Run " oxy_button(actionID, 'dedupe_characters', showText, false);
 }
 
 person, personGrp {

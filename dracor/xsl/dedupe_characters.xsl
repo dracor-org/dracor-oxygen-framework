@@ -8,7 +8,7 @@
     </xsl:template>
     
     <xsl:template match="tei:person[@sameAs]">
-        <xsl:comment>Something needs to be done here</xsl:comment>
+        <!-- <xsl:comment>Something needs to be done here</xsl:comment> -->
     </xsl:template>
     
     <xsl:template match="tei:sp">
@@ -19,7 +19,7 @@
             
             <!-- Change the who attribute if there is an person element with a sameAs attribute that indicates this is a doublette -->
             <xsl:when test="./ancestor::tei:TEI//tei:person[@xml:id eq $character_id][@sameAs]">
-                <xsl:comment>This was changed:</xsl:comment>
+                <!-- <xsl:comment>This was changed:</xsl:comment> -->
                 <xsl:copy>
                     <xsl:attribute name="who" select="./ancestor::tei:TEI//tei:person[@xml:id eq $character_id]/@sameAs"/>
                     <!-- keep arbitraty attributes -->

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Basic File to Test the Features of DraCor Plays -->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="tst000000" xml:lang="eng">
+<?xml version="1.0" encoding="UTF-8"?><!-- Basic File to Test the Features of DraCor Plays --><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="tst000000" xml:lang="eng">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -14,8 +12,7 @@
                 <availability>
                     <licence>
                         <ab>CC0 1.0</ab>
-                        <ref target="https://creativecommons.org/publicdomain/zero/1.0/"
-                            >Licence</ref>
+                        <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
                     </licence>
                 </availability>
             </publicationStmt>
@@ -31,9 +28,7 @@
         <profileDesc>
             <particDesc>
                 <listPerson>
-                    <person xml:id="ham">
-                        <persName>Ham</persName>
-                    </person>
+                    
                     <person xml:id="egg">
                         <persName>Egg</persName>
                     </person>
@@ -84,10 +79,7 @@
                 <div type="scene">
                     <head>Scene 1.</head>
                     <stage>Ham and Egg.</stage>
-                    <sp who="#ham">
-                        <speaker>Ham.</speaker>
-                        <p>Lovely Spam!</p>
-                    </sp>
+                    <sp who="#egg"><speaker>Ham.</speaker><p>Lovely Spam!</p></sp>
                     <sp who="#egg">
                         <speaker>Egg.</speaker>
                         <p>Wonderful Spam!</p>
@@ -96,10 +88,7 @@
                 <div type="scene">
                     <head>Scene 2.</head>
                     <stage>Enter Vikings.</stage>
-                    <sp who="#ham">
-                        <speaker>Ham.</speaker>
-                        <p>Egg! Sausage, and Bacon!</p>
-                    </sp>
+                    <sp who="#egg"><speaker>Ham.</speaker><p>Egg! Sausage, and Bacon!</p></sp>
                     <sp who="#sausage #bacon">
                         <speaker>Vikings</speaker>
                         <stage>(singing).</stage>
