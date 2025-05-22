@@ -7,7 +7,7 @@ TEI {
 }
 
 TEI::before {
-    content:"Character Deduplication";
+    content:"Character Deduplication \A Set the attribute @sameAs to a character ID if the given character is a duplicate. Running the deduplication process will remove the character with the @sameAs attribute and change the value of the @who attribute accordingly.";
     font-size:large;
 }
 
@@ -39,7 +39,7 @@ profileDesc {
 
 particDesc:before {
     display:block;
-    content:"particDesc";
+    content:"Characters (particDesc)";
     font-weight:bold;
     font-size:large;
 }
@@ -72,6 +72,7 @@ person[sameAs] {
 persName {
     display:block;
     color:black;
+    font-weight:bold;
 }
 
 revisionDesc {
