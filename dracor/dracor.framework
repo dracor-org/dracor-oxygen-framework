@@ -806,7 +806,66 @@
 											<field name="validationEngine">
 												<validationEngine>
 													<field name="engineType">
-														<String>Saxon-EE</String>
+														<String>&lt;Default engine></String>
+													</field>
+													<field name="allowsAutomaticValidation">
+														<Boolean>true</Boolean>
+													</field>
+												</validationEngine>
+											</field>
+											<field name="allowAutomaticValidation">
+												<Boolean>true</Boolean>
+											</field>
+											<field name="extensions">
+												<null/>
+											</field>
+											<field name="validationSchema">
+												<validationUnitSchema>
+													<field name="dtdSchemaPublicID">
+														<null/>
+													</field>
+													<field name="schematronPhase">
+														<null/>
+													</field>
+													<field name="type">
+														<Integer>6</Integer>
+													</field>
+													<field name="uri">
+														<String>https://github.com/dracor-org/dracor-schema/releases/download/v1.0.0-beta.4/dracor-schema-v1.0.0-beta.4.rng</String>
+													</field>
+												</validationUnitSchema>
+											</field>
+											<field name="validationAdvancedSettings">
+												<null/>
+											</field>
+										</validationUnit>
+									</list>
+								</field>
+								<field name="type">
+									<String>Validation_scenario</String>
+								</field>
+								<field name="name">
+									<String>dracor schema (v1.0.0-beta.4)</String>
+								</field>
+							</validationScenario>
+							<validationScenario>
+								<field name="pairs">
+									<list>
+										<validationUnit>
+											<field name="validationType">
+												<validationUnitType>
+													<field name="validationInputType">
+														<String>text/xml</String>
+													</field>
+												</validationUnitType>
+											</field>
+											<field name="url">
+												<String>${currentFileURL}</String>
+											</field>
+											<field name="validationEngine">
+												<validationEngine>
+													<field name="engineType">
+														<String>&lt;Default engine></String>
 													</field>
 													<field name="allowsAutomaticValidation">
 														<Boolean>true</Boolean>
@@ -845,7 +904,7 @@
 									<String>Validation_scenario</String>
 								</field>
 								<field name="name">
-									<String>dracor</String>
+									<String>dracor schema (production)</String>
 								</field>
 							</validationScenario>
 							<validationScenario>
@@ -904,7 +963,66 @@
 									<String>Validation_scenario</String>
 								</field>
 								<field name="name">
-									<String>dracor (staging)</String>
+									<String>dracor schema (stating)</String>
+								</field>
+							</validationScenario>
+							<validationScenario>
+								<field name="pairs">
+									<list>
+										<validationUnit>
+											<field name="validationType">
+												<validationUnitType>
+													<field name="validationInputType">
+														<String>text/xml</String>
+													</field>
+												</validationUnitType>
+											</field>
+											<field name="url">
+												<String>${currentFileURL}</String>
+											</field>
+											<field name="validationEngine">
+												<validationEngine>
+													<field name="engineType">
+														<String>&lt;Default engine></String>
+													</field>
+													<field name="allowsAutomaticValidation">
+														<Boolean>true</Boolean>
+													</field>
+												</validationEngine>
+											</field>
+											<field name="allowAutomaticValidation">
+												<Boolean>true</Boolean>
+											</field>
+											<field name="extensions">
+												<null/>
+											</field>
+											<field name="validationSchema">
+												<validationUnitSchema>
+													<field name="dtdSchemaPublicID">
+														<null/>
+													</field>
+													<field name="schematronPhase">
+														<null/>
+													</field>
+													<field name="type">
+														<Integer>6</Integer>
+													</field>
+													<field name="uri">
+														<String>http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng</String>
+													</field>
+												</validationUnitSchema>
+											</field>
+											<field name="validationAdvancedSettings">
+												<null/>
+											</field>
+										</validationUnit>
+									</list>
+								</field>
+								<field name="type">
+									<String>Validation_scenario</String>
+								</field>
+								<field name="name">
+									<String>TEI all</String>
 								</field>
 							</validationScenario>
 						</validationScenario-array>
