@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="neolatXXXXXX"
+     xml:lang="lat"
+     xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main"><!-- title --></title>
+            <author>
+               <persName xml:lang="eng"><!-- author's name --></persName>
+               <idno type="wikidata"><!-- Wikidata ID of the author --></idno>
+            </author>
+            <respStmt>
+               <resp>Transcribed by</resp>
+               <persName><!-- Transcriber's name --></persName>
+            </respStmt>
+            <respStmt>
+               <resp>Converted to TEI under the supervision of</resp>
+               <persName><!-- Person Name --></persName>
+            </respStmt>
+            <respStmt>
+               <resp>Converted to TEI by</resp>
+               <persName><!-- Person Name --></persName>
+            </respStmt>
+            <funder>
+               <orgName><!-- Funder Name --></orgName>
+            </funder>
+         </titleStmt>
+         <publicationStmt>
+            <authority><!-- Authority Name --></authority>
+            <publisher xml:id="dracor">DraCor</publisher>
+            <idno type="URL">https://dracor.org</idno>
+            <availability>
+               <licence>
+                  <ab>CC0 1.0</ab>
+                  <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl type="digitalSource">
+               <name><!-- Name of the Digital Source --></name>
+            </bibl>
+            <bibl type="originalSource"><!-- Source --></bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="character_id" sex="" role="">
+                  <persName><!-- Character Name --></persName>
+               </person>
+               <!-- additional characters -->
+            </listPerson>
+         </particDesc>
+         <textClass>
+            <keywords>
+               <term type="genreTitle">Check!</term>
+            </keywords>
+            <classCode scheme="http://www.wikidata.org/entity/"><!-- Wikidata Code of the Genre --></classCode>
+         </textClass>
+         <creation>
+            <region>
+               <ref target=""><!-- Name of the Region --></ref>
+            </region>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <standOff>
+      <!-- listRelation -->
+      <listEvent>
+         <event type="print" when="">
+            <desc/>
+         </event>
+      </listEvent>
+   </standOff>
+   <text>
+      <front>
+         <titlePage>
+            <docTitle>
+               <titlePart><!-- add title --></titlePart>
+            </docTitle>
+         </titlePage>
+      </front>
+      <body>
+         <div type="act" n="1">
+            <div type="scene" n="1">
+               <head><!-- heading of first act --></head>
+               <stage><!-- stage direction --></stage>
+               <sp who="#character_id">
+                  <speaker><!-- Speaker Label --></speaker>
+                  <l><!-- verse line --></l>
+               </sp>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
