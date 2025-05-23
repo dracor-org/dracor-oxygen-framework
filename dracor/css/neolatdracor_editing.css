@@ -52,6 +52,10 @@ head {
     margin-bottom:1em;
 }
 
+div[type] > head {
+    color:DarkViolet;
+}
+
 sp {
     display:block;
     margin-top:1em;
@@ -63,7 +67,7 @@ l {
 
 speaker {
     font-weight:bold;
-    color:lime;
+    color:ForestGreen;
 }
 
 lb::before {
@@ -76,4 +80,25 @@ castList {
 
 castItem {
     display:block;
+}
+
+stage {
+    color:orange;
+}
+
+argument {
+    display:block;
+}
+
+argument > head {
+    color:DarkViolet; 
+}
+
+castItem > role {
+    color:DarkRed;
+}
+
+pb:after {
+    content:oxy_attributes();
+    color:DarkTurquoise;
 }

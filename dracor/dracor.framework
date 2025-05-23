@@ -797,6 +797,44 @@
 													<null/>
 												</field>
 											</menu>
+											<menu>
+												<field name="label">
+													<String>Dramatis Personae</String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="iconPath">
+													<String></String>
+												</field>
+												<field name="menuEntriesDescriptorList">
+													<menuEntry-array>
+														<menuItem>
+															<field name="actionID">
+																<String>castList</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>castItem</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>castGroup</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>roleDesc</String>
+															</field>
+														</menuItem>
+													</menuEntry-array>
+												</field>
+												<field name="context">
+													<null/>
+												</field>
+											</menu>
 										</menuEntry-array>
 									</field>
 									<field name="context">
