@@ -6,7 +6,7 @@
 TEI {
     display: block;
     margin-left:20px;
-    content: "@xml:id: " oxy_textfield( edit, "@xml:id", values, " ", color, "black", columns, 40) "\A" "@prev: " oxy_textfield( edit, "@prev", values, " ", color, "black", columns, 40) "\A" "@next: " oxy_textfield( edit, "@next", values, " ", color, "black", columns, 40);
+    content: "@xml:id: " oxy_textfield( edit, "@xml:id", values, " ", color, "black", columns, 40);
 }
 
 TEI:before {
