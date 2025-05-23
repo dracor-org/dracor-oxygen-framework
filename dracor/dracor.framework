@@ -12,7 +12,7 @@
 						<null/>
 					</field>
 					<field name="name">
-						<String>dracor</String>
+						<String>DraCor</String>
 					</field>
 					<field name="schemaDescriptor">
 						<docTypeSchema>
@@ -84,6 +84,17 @@
 										</field>
 										<field name="title">
 											<String>NeoLatDraCor Header</String>
+										</field>
+										<field name="alternate">
+											<Boolean>true</Boolean>
+										</field>
+									</cssFile>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css/neolatdracor_editing.css</String>
+										</field>
+										<field name="title">
+											<String>NeoLatDraCor Editing</String>
 										</field>
 										<field name="alternate">
 											<Boolean>true</Boolean>
@@ -165,7 +176,7 @@
 											<String></String>
 										</field>
 										<field name="accelerator">
-											<null/>
+											<String>M4 L</String>
 										</field>
 										<field name="actionModes">
 											<actionMode-array>
@@ -294,7 +305,7 @@
 											<String>Mark as &lt;div type="scene"></String>
 										</field>
 										<field name="largeIconPath">
-											<String>${framework}/images/scene.png</String>
+											<String></String>
 										</field>
 										<field name="smallIconPath">
 											<String></String>
@@ -303,7 +314,7 @@
 											<String></String>
 										</field>
 										<field name="accelerator">
-											<null/>
+											<String>M4 S</String>
 										</field>
 										<field name="actionModes">
 											<actionMode-array>
@@ -340,7 +351,7 @@
 											<String>Mark as &lt;div type="act"></String>
 										</field>
 										<field name="largeIconPath">
-											<String>${framework}/images/act.png</String>
+											<String></String>
 										</field>
 										<field name="smallIconPath">
 											<String></String>
@@ -362,6 +373,144 @@
 															<entry>
 																<String>fragment</String>
 																<String>&lt;div xmlns="http://www.tei-c.org/ns/1.0" type="act">&lt;/div></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>head</String>
+										</field>
+										<field name="name">
+											<String>heading</String>
+										</field>
+										<field name="description">
+											<String>Mark title of a segment with &lt;head></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;head xmlns="http://www.tei-c.org/ns/1.0">&lt;/head></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>verse_line</String>
+										</field>
+										<field name="name">
+											<String>verse line</String>
+										</field>
+										<field name="description">
+											<String>Mark a verse line with &lt;l></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;l xmlns="http://www.tei-c.org/ns/1.0" type="act">&lt;/l></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>foreign</String>
+										</field>
+										<field name="name">
+											<String>foreign</String>
+										</field>
+										<field name="description">
+											<String>Mark text as foreign term &lt;foreign></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;foreign xmlns="http://www.tei-c.org/ns/1.0" xml:lang="${ask('Language (ISO)', input_type, '')}">&lt;/foreign></String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -444,12 +593,18 @@
 														</menuItem>
 														<menuItem>
 															<field name="actionID">
+																<String>stage</String>
+															</field>
+														</menuItem>
+														<menuSeparator/>
+														<menuItem>
+															<field name="actionID">
 																<String>p</String>
 															</field>
 														</menuItem>
 														<menuItem>
 															<field name="actionID">
-																<String>stage</String>
+																<String>verse_line</String>
 															</field>
 														</menuItem>
 													</menuEntry-array>
@@ -468,7 +623,7 @@
 							<field name="toolbarDescriptor">
 								<toolbar>
 									<field name="id">
-										<String>Symbolleiste</String>
+										<String>Edit</String>
 									</field>
 									<field name="type">
 										<Integer>2</Integer>
@@ -480,62 +635,61 @@
 										<null/>
 									</field>
 									<field name="toolbarEntriesDescriptorList">
-										<toolbarEntry-array/>
+										<toolbarEntry-array>
+											<toolbarItem>
+												<field name="actionID">
+													<String>act</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>scene</String>
+												</field>
+											</toolbarItem>
+											<toolbarSeparator/>
+											<toolbarItem>
+												<field name="actionID">
+													<String>sp</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>speaker</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>stage</String>
+												</field>
+											</toolbarItem>
+											<toolbarSeparator/>
+											<toolbarItem>
+												<field name="actionID">
+													<String>p</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>verse_line</String>
+												</field>
+											</toolbarItem>
+											<toolbarSeparator/>
+											<toolbarItem>
+												<field name="actionID">
+													<String>head</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>foreign</String>
+												</field>
+											</toolbarItem>
+										</toolbarEntry-array>
 									</field>
 								</toolbar>
 							</field>
 							<field name="additionalToolbarsDescriptors">
-								<toolbar-array>
-									<toolbar>
-										<field name="id">
-											<String>Edit</String>
-										</field>
-										<field name="type">
-											<Integer>2</Integer>
-										</field>
-										<field name="largeIconPath">
-											<null/>
-										</field>
-										<field name="smallIconPath">
-											<null/>
-										</field>
-										<field name="toolbarEntriesDescriptorList">
-											<toolbarEntry-array>
-												<toolbarItem>
-													<field name="actionID">
-														<String>act</String>
-													</field>
-												</toolbarItem>
-												<toolbarItem>
-													<field name="actionID">
-														<String>scene</String>
-													</field>
-												</toolbarItem>
-												<toolbarSeparator/>
-												<toolbarItem>
-													<field name="actionID">
-														<String>sp</String>
-													</field>
-												</toolbarItem>
-												<toolbarItem>
-													<field name="actionID">
-														<String>speaker</String>
-													</field>
-												</toolbarItem>
-												<toolbarItem>
-													<field name="actionID">
-														<String>p</String>
-													</field>
-												</toolbarItem>
-												<toolbarItem>
-													<field name="actionID">
-														<String>stage</String>
-													</field>
-												</toolbarItem>
-											</toolbarEntry-array>
-										</field>
-									</toolbar>
-								</toolbar-array>
+								<null/>
 							</field>
 							<field name="contextualItems">
 								<contextProvider>

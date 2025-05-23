@@ -1,0 +1,79 @@
+/*  @import "css-tei-framework/tei_oxygen.css"; */
+
+/* Dracor Editing View */
+
+TEI {
+    display:block;
+}
+
+teiHeader {
+    display:none;
+}
+
+standOff {
+    display:none;
+}
+
+front {
+    display:block;
+}
+
+
+titlePage {
+    display:block;
+}
+
+docTitle {
+    display:block;
+}
+
+body {
+    display:block;
+    margin-top:3em;
+    padding-left:0.5em;
+}
+
+div {
+    display:block;
+    margin-top:2em;
+}
+
+p {
+    display: block;
+}
+
+argument {
+    display: block;
+}
+
+head {
+    display:block;
+    font-weight:bold;
+    margin-bottom:1em;
+}
+
+sp {
+    display:block;
+    margin-top:1em;
+}
+
+l {
+    display:block;
+}
+
+speaker {
+    font-weight:bold;
+    color:lime;
+}
+
+lb::before {
+    content: "\a";
+}
+
+castList {
+    display:block;
+}
+
+castItem {
+    display:block;
+}
