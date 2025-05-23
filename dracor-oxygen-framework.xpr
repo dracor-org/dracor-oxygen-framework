@@ -28,7 +28,7 @@
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>3/dracor/dracor.framework/dracor/dracor (staging)</String>
+                                        <String>3/dracor/dracor.framework/dracor/TEI all</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
