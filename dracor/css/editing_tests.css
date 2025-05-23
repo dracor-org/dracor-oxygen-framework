@@ -76,3 +76,17 @@ castList {
 castItem {
     display:block;
 }
+
+/*MV*/
+
+text {
+    display: none;
+}
+
+teiHeader {
+    display: block;
+}
+
+teiHeader fileDesc titleStmt *:not(title) {
+    display: block;
+}

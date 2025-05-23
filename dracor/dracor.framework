@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<serialized version="19.1" xml:space="preserve">
+<serialized xml:space="preserve">
 	<serializableOrderedMap>
 		<entry>
 			<String>document.types</String>
 			<documentTypeDescriptor-array>
 				<documentTypeDescriptor>
+					<field name="webResources">
+						<null/>
+					</field>
 					<field name="extensionPatch">
 						<null/>
 					</field>
 					<field name="name">
-						<String>dracor</String>
+						<String>DraCor</String>
 					</field>
 					<field name="schemaDescriptor">
-						<null/>
+						<docTypeSchema>
+							<field name="type">
+								<Integer>6</Integer>
+							</field>
+							<field name="uri">
+								<String>https://dracor.org/schema.rng</String>
+							</field>
+						</docTypeSchema>
 					</field>
 					<field name="classpath">
 						<String-array/>
@@ -26,10 +36,10 @@
 								<cssFile-array>
 									<cssFile>
 										<field name="href">
-											<String>https://raw.githubusercontent.com/dracor-org/gerdracor/main/css/tei.css</String>
+											<String>${framework}/css/gerdracor_tei.css</String>
 										</field>
 										<field name="title">
-											<String>Franks CSS</String>
+											<String>GerDraCor Custom CSS</String>
 										</field>
 										<field name="alternate">
 											<Boolean>true</Boolean>
@@ -63,6 +73,39 @@
 										</field>
 										<field name="title">
 											<String>Structure</String>
+										</field>
+										<field name="alternate">
+											<Boolean>true</Boolean>
+										</field>
+									</cssFile>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css/neolatdracor_metadata.css</String>
+										</field>
+										<field name="title">
+											<String>NeoLatDraCor Header</String>
+										</field>
+										<field name="alternate">
+											<Boolean>true</Boolean>
+										</field>
+									</cssFile>
+                  <cssFile>
+										<field name="href">
+                      <String>${framework}/css/neolatdracor_editing.css</String>
+										</field>
+                    <field name="title">
+											<String>NeoLatDraCor Editing</String>
+                    </field>
+                    <field name="alternate">
+											<Boolean>true</Boolean>
+										</field>
+									</cssFile>
+                  <cssFile>
+										<field name="href">
+											<String>${framework}/css/dedupe_characters.css</String>
+										</field>
+										<field name="title">
+											<String>Character Deduplication</String>
 										</field>
 										<field name="alternate">
 											<Boolean>true</Boolean>
@@ -144,7 +187,7 @@
 											<String></String>
 										</field>
 										<field name="accelerator">
-											<null/>
+											<String>M4 L</String>
 										</field>
 										<field name="actionModes">
 											<actionMode-array>
@@ -282,7 +325,7 @@
 											<String></String>
 										</field>
 										<field name="accelerator">
-											<null/>
+											<String>M4 S</String>
 										</field>
 										<field name="actionModes">
 											<actionMode-array>
@@ -341,6 +384,374 @@
 															<entry>
 																<String>fragment</String>
 																<String>&lt;div xmlns="http://www.tei-c.org/ns/1.0" type="act">&lt;/div></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+                  <action>
+										<field name="id">
+											<String>head</String>
+										</field>
+										<field name="name">
+											<String>heading</String>
+										</field>
+										<field name="description">
+											<String>Mark title of a segment with &lt;head></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;head xmlns="http://www.tei-c.org/ns/1.0">&lt;/head></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+                  </action>
+                  <action>
+										<field name="id">
+											<String>dedupe_characters</String>
+										</field>
+										<field name="name">
+											<String>Character Deduplication</String>
+										</field>
+										<field name="description">
+											<String>Deduplication of Characters</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>scenarioName</String>
+																<String>Character Deduplication</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ExecuteCustomizableTransformationScenarioOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+                  <action>
+										<field name="id">
+											<String>verse_line</String>
+										</field>
+										<field name="name">
+											<String>verse line</String>
+										</field>
+										<field name="description">
+											<String>Mark a verse line with &lt;l></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;l xmlns="http://www.tei-c.org/ns/1.0" type="act">&lt;/l></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+                  <action>
+										<field name="id">
+											<String>foreign</String>
+										</field>
+										<field name="name">
+											<String>foreign</String>
+										</field>
+										<field name="description">
+											<String>Mark text as foreign term &lt;foreign></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;foreign xmlns="http://www.tei-c.org/ns/1.0" xml:lang="${ask('Language (ISO)', input_type, '')}">&lt;/foreign></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+                  <action>
+										<field name="id">
+											<String>castList</String>
+										</field>
+										<field name="name">
+											<String>castList</String>
+										</field>
+										<field name="description">
+											<String>Mark text as &lt;castList></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;castList xmlns="http://www.tei-c.org/ns/1.0">&lt;/castList></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+                  <action>
+										<field name="id">
+											<String>castItem</String>
+										</field>
+										<field name="name">
+											<String>castItem</String>
+										</field>
+										<field name="description">
+											<String>Mark text as &lt;castItem></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;castItem xmlns="http://www.tei-c.org/ns/1.0">&lt;/castItem></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+                  <action>
+										<field name="id">
+											<String>castGroup</String>
+										</field>
+										<field name="name">
+											<String>castGroup</String>
+										</field>
+										<field name="description">
+											<String>Mark text as &lt;castGroup></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;castGroup xmlns="http://www.tei-c.org/ns/1.0">&lt;/castGroup></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+                  </action>
+									<action>
+										<field name="id">
+											<String>roleDesc</String>
+										</field>
+										<field name="name">
+											<String>roleDesc</String>
+										</field>
+										<field name="description">
+											<String>Mark text as &lt;roleDesc></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;roleDesc xmlns="http://www.tei-c.org/ns/1.0">&lt;/roleDesc></String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -423,12 +834,56 @@
 														</menuItem>
 														<menuItem>
 															<field name="actionID">
+																<String>stage</String>
+															</field>
+														</menuItem>
+														<menuSeparator/>
+														<menuItem>
+															<field name="actionID">
 																<String>p</String>
 															</field>
 														</menuItem>
 														<menuItem>
 															<field name="actionID">
-																<String>stage</String>
+																<String>verse_line</String>
+															</field>
+														</menuItem>
+													</menuEntry-array>
+												</field>
+												<field name="context">
+													<null/>
+												</field>
+											</menu>
+											<menu>
+												<field name="label">
+													<String>Dramatis Personae</String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="iconPath">
+													<String></String>
+												</field>
+												<field name="menuEntriesDescriptorList">
+													<menuEntry-array>
+														<menuItem>
+															<field name="actionID">
+																<String>castList</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>castItem</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>castGroup</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>roleDesc</String>
 															</field>
 														</menuItem>
 													</menuEntry-array>
@@ -447,7 +902,7 @@
 							<field name="toolbarDescriptor">
 								<toolbar>
 									<field name="id">
-										<String>Symbolleiste</String>
+										<String>Edit</String>
 									</field>
 									<field name="type">
 										<Integer>2</Integer>
@@ -459,62 +914,82 @@
 										<null/>
 									</field>
 									<field name="toolbarEntriesDescriptorList">
-										<toolbarEntry-array/>
+										<toolbarEntry-array>
+											<toolbarItem>
+												<field name="actionID">
+													<String>act</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>scene</String>
+												</field>
+											</toolbarItem>
+											<toolbarSeparator/>
+											<toolbarItem>
+												<field name="actionID">
+													<String>sp</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>speaker</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>stage</String>
+												</field>
+											</toolbarItem>
+											<toolbarSeparator/>
+											<toolbarItem>
+												<field name="actionID">
+													<String>p</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>verse_line</String>
+												</field>
+											</toolbarItem>
+											<toolbarSeparator/>
+											<toolbarItem>
+												<field name="actionID">
+													<String>head</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>foreign</String>
+												</field>
+											</toolbarItem>
+											<toolbarSeparator/>
+											<toolbarItem>
+												<field name="actionID">
+													<String>castList</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>castItem</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>castGroup</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>roleDesc</String>
+												</field>
+											</toolbarItem>
+										</toolbarEntry-array>
 									</field>
 								</toolbar>
 							</field>
 							<field name="additionalToolbarsDescriptors">
-								<toolbar-array>
-									<toolbar>
-										<field name="id">
-											<String>Edit</String>
-										</field>
-										<field name="type">
-											<Integer>2</Integer>
-										</field>
-										<field name="largeIconPath">
-											<null/>
-										</field>
-										<field name="smallIconPath">
-											<null/>
-										</field>
-										<field name="toolbarEntriesDescriptorList">
-											<toolbarEntry-array>
-												<toolbarItem>
-													<field name="actionID">
-														<String>act</String>
-													</field>
-												</toolbarItem>
-												<toolbarItem>
-													<field name="actionID">
-														<String>scene</String>
-													</field>
-												</toolbarItem>
-												<toolbarSeparator/>
-												<toolbarItem>
-													<field name="actionID">
-														<String>sp</String>
-													</field>
-												</toolbarItem>
-												<toolbarItem>
-													<field name="actionID">
-														<String>speaker</String>
-													</field>
-												</toolbarItem>
-												<toolbarItem>
-													<field name="actionID">
-														<String>p</String>
-													</field>
-												</toolbarItem>
-												<toolbarItem>
-													<field name="actionID">
-														<String>stage</String>
-													</field>
-												</toolbarItem>
-											</toolbarEntry-array>
-										</field>
-									</toolbar>
-								</toolbar-array>
+								<null/>
 							</field>
 							<field name="contextualItems">
 								<contextProvider>
@@ -564,7 +1039,7 @@
 						<String-array/>
 					</field>
 					<field name="description">
-						<String></String>
+						<String>DraCor Oxygen Framework</String>
 					</field>
 					<field name="doctypeRules">
 						<documentTypeRule-array>
@@ -603,7 +1078,7 @@
 									<null/>
 								</field>
 								<field name="name">
-									<String>CAMENA TEI 2 DraCor</String>
+									<String>CAMENA TEI 2 DraCor (deprecated)</String>
 								</field>
 								<field name="baseURL">
 									<String></String>
@@ -640,9 +1115,6 @@
 								</field>
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
-								</field>
-								<field name="outputFile">
-									<File>${cf}</File>
 								</field>
 								<field name="outputResource">
 									<String>${cf}</String>
@@ -727,8 +1199,88 @@
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
-								<field name="outputFile">
-									<File>${cf}</File>
+								<field name="outputResource">
+									<String>${cf}</String>
+								</field>
+								<field name="openOtherLocationInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="locationToOpenInBrowserURL">
+									<null/>
+								</field>
+								<field name="openInEditor">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInHTMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInXMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInSVGPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInResultSetPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="useXSLTInput">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="xsltParams">
+									<list/>
+								</field>
+								<field name="cascadingStylesheets">
+									<String-array/>
+								</field>
+								<field name="xslTransformer">
+									<String>Saxon-PE</String>
+								</field>
+								<field name="extensionURLs">
+									<String-array/>
+								</field>
+							</scenario>
+							<scenario>
+								<field name="advancedOptionsMap">
+									<null/>
+								</field>
+								<field name="name">
+									<String>Character Deduplication</String>
+								</field>
+								<field name="baseURL">
+									<String></String>
+								</field>
+								<field name="footerURL">
+									<String></String>
+								</field>
+								<field name="fOPMethod">
+									<String>pdf</String>
+								</field>
+								<field name="fOProcessorName">
+									<String>Apache FOP</String>
+								</field>
+								<field name="headerURL">
+									<String></String>
+								</field>
+								<field name="inputXSLURL">
+									<String>${framework}/xsl/dedupe_characters.xsl</String>
+								</field>
+								<field name="inputXMLURL">
+									<String>${currentFileURL}</String>
+								</field>
+								<field name="defaultScenario">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="isFOPPerforming">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="type">
+									<String>XSL</String>
+								</field>
+								<field name="saveAs">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="openInBrowser">
+									<Boolean>false</Boolean>
 								</field>
 								<field name="outputResource">
 									<String>${cf}</String>
@@ -781,7 +1333,7 @@
 											<field name="validationType">
 												<validationUnitType>
 													<field name="validationInputType">
-														<String>text/any</String>
+														<String>text/xml</String>
 													</field>
 												</validationUnitType>
 											</field>
@@ -805,6 +1357,22 @@
 												<null/>
 											</field>
 											<field name="validationSchema">
+												<validationUnitSchema>
+													<field name="dtdSchemaPublicID">
+														<null/>
+													</field>
+													<field name="schematronPhase">
+														<null/>
+													</field>
+													<field name="type">
+														<Integer>6</Integer>
+													</field>
+													<field name="uri">
+														<String>https://github.com/dracor-org/dracor-schema/releases/download/v1.0.0-beta.4/dracor-schema-v1.0.0-beta.4.rng</String>
+													</field>
+												</validationUnitSchema>
+											</field>
+											<field name="validationAdvancedSettings">
 												<null/>
 											</field>
 										</validationUnit>
@@ -814,7 +1382,7 @@
 									<String>Validation_scenario</String>
 								</field>
 								<field name="name">
-									<String>dracor</String>
+									<String>dracor schema (v1.0.0-beta.4)</String>
 								</field>
 							</validationScenario>
 							<validationScenario>
@@ -856,12 +1424,15 @@
 														<null/>
 													</field>
 													<field name="type">
-														<Integer>7</Integer>
+														<Integer>6</Integer>
 													</field>
 													<field name="uri">
-														<String>https://raw.githubusercontent.com/dracor-org/dracor-schema/main/dracor.sch</String>
+														<String>https://dracor.org/schema.rng</String>
 													</field>
 												</validationUnitSchema>
+											</field>
+											<field name="validationAdvancedSettings">
+												<null/>
 											</field>
 										</validationUnit>
 									</list>
@@ -870,16 +1441,131 @@
 									<String>Validation_scenario</String>
 								</field>
 								<field name="name">
-									<String>dracor-readyness-check</String>
+									<String>dracor schema (production)</String>
+								</field>
+							</validationScenario>
+							<validationScenario>
+								<field name="pairs">
+									<list>
+										<validationUnit>
+											<field name="validationType">
+												<validationUnitType>
+													<field name="validationInputType">
+														<String>text/xml</String>
+													</field>
+												</validationUnitType>
+											</field>
+											<field name="url">
+												<String>${currentFileURL}</String>
+											</field>
+											<field name="validationEngine">
+												<validationEngine>
+													<field name="engineType">
+														<String>&lt;Default engine></String>
+													</field>
+													<field name="allowsAutomaticValidation">
+														<Boolean>true</Boolean>
+													</field>
+												</validationEngine>
+											</field>
+											<field name="allowAutomaticValidation">
+												<Boolean>true</Boolean>
+											</field>
+											<field name="extensions">
+												<null/>
+											</field>
+											<field name="validationSchema">
+												<validationUnitSchema>
+													<field name="dtdSchemaPublicID">
+														<null/>
+													</field>
+													<field name="schematronPhase">
+														<null/>
+													</field>
+													<field name="type">
+														<Integer>6</Integer>
+													</field>
+													<field name="uri">
+														<String>https://staging.dracor.org/schema.rng</String>
+													</field>
+												</validationUnitSchema>
+											</field>
+											<field name="validationAdvancedSettings">
+												<null/>
+											</field>
+										</validationUnit>
+									</list>
+								</field>
+								<field name="type">
+									<String>Validation_scenario</String>
+								</field>
+								<field name="name">
+									<String>dracor schema (stating)</String>
+								</field>
+							</validationScenario>
+							<validationScenario>
+								<field name="pairs">
+									<list>
+										<validationUnit>
+											<field name="validationType">
+												<validationUnitType>
+													<field name="validationInputType">
+														<String>text/xml</String>
+													</field>
+												</validationUnitType>
+											</field>
+											<field name="url">
+												<String>${currentFileURL}</String>
+											</field>
+											<field name="validationEngine">
+												<validationEngine>
+													<field name="engineType">
+														<String>&lt;Default engine></String>
+													</field>
+													<field name="allowsAutomaticValidation">
+														<Boolean>true</Boolean>
+													</field>
+												</validationEngine>
+											</field>
+											<field name="allowAutomaticValidation">
+												<Boolean>true</Boolean>
+											</field>
+											<field name="extensions">
+												<null/>
+											</field>
+											<field name="validationSchema">
+												<validationUnitSchema>
+													<field name="dtdSchemaPublicID">
+														<null/>
+													</field>
+													<field name="schematronPhase">
+														<null/>
+													</field>
+													<field name="type">
+														<Integer>6</Integer>
+													</field>
+													<field name="uri">
+														<String>http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng</String>
+													</field>
+												</validationUnitSchema>
+											</field>
+											<field name="validationAdvancedSettings">
+												<null/>
+											</field>
+										</validationUnit>
+									</list>
+								</field>
+								<field name="type">
+									<String>Validation_scenario</String>
+								</field>
+								<field name="name">
+									<String>TEI all</String>
 								</field>
 							</validationScenario>
 						</validationScenario-array>
 					</field>
 					<field name="defaultValidationScenarios">
-						<list>
-							<String>dracor</String>
-							<String>dracor-readyness-check</String>
-						</list>
+						<null/>
 					</field>
 					<field name="defaultTransformationScenarios">
 						<null/>
