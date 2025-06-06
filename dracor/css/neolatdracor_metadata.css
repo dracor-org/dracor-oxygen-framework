@@ -6,7 +6,7 @@
 TEI {
     display: block;
     margin-left:20px;
-    content: "@xml:id: " oxy_textfield( edit, "@xml:id", values, " ", color, "black", columns, 40) "\A" "@prev: " oxy_textfield( edit, "@prev", values, " ", color, "black", columns, 40) "\A" "@next: " oxy_textfield( edit, "@next", values, " ", color, "black", columns, 40);
+    content: "@xml:id: " oxy_textfield( edit, "@xml:id", values, " ", color, "black", columns, 40);
 }
 
 TEI:before {
@@ -44,9 +44,9 @@ titleStmt:before {
 }
 
 /* Title */
-titleStmt title[type=main] {
+titleStmt title {
     display:block;
-    font-size:xx-large;
+    font-size:large;
     
 }
 
@@ -69,7 +69,9 @@ titleStmt author:before {
     font-weight:bold;
     margin-top:2em;
     border-bottom:2px solid gray;
+    margin-bottom:1em;
     font-family:sans-serif;
+    font-size: medium;
     color:gray;
 }
 
@@ -114,8 +116,8 @@ titleStmt author name surname:before {
     margin-right:3em;
 }
 
-
-titleStmt author idno[type=ORCID]:after {
+/*TODO: Update the wiki link */
+titleStmt author idno[type=wikidata]:after {
     display:inline;
     font-family:sans-serif;
     font-size:small;
@@ -124,6 +126,108 @@ titleStmt author idno[type=ORCID]:after {
     content:' [ansehen]';
     link:oxy_xpath(" concat('https://orcid.org/', ./text()/string()) ");
     margin-left:2em;
+}
+
+/*TODO: Update the pnd link */
+titleStmt author idno[type=pnd]:after {
+    display:inline;
+    font-family:sans-serif;
+    font-size:small;
+    color:blue;
+    text-decoration:underline;
+    content:' [ansehen]';
+    link:oxy_xpath(" concat('https://orcid.org/', ./text()/string()) ");
+    margin-left:2em;
+}
+
+/*Editor(s)*/
+titleStmt author:last-of-type:after {
+    display: block;
+    content: "Editor(s) " oxy_button(action, oxy_action(
+            name, 'Add', 
+            description, 'Insert new editor element after the last one',  
+            operation, 'InsertFragmentOperation', 
+            arg-fragment, "<editor>Editor's Name</editor>",
+            arg-insertLocation, '//titleStmt/author',
+            arg-insertPosition, 'After'
+          ));
+    font-weight:bold;
+    margin-top:2em;
+    border-bottom:2px solid gray;
+    margin-bottom:1em;
+    font-family:sans-serif;
+    font-size: medium;
+    color:gray;
+}
+
+/*TODO: Add oxy_button for creating new editors*/
+
+titleStmt editor {
+    display:block;
+}
+
+/*Statements of responsibilty*/
+titleStmt respStmt:first-of-type:before {
+    content:"Statements of responsibilty  " oxy_button(action, oxy_action(
+            name, 'Add', 
+            description, 'Insert new responsibility statement after the last one',  
+            operation, 'InsertFragmentOperation', 
+            arg-fragment, "<respStmt><resp>Role</resp><persName>Person</persName></respStmt>",
+            arg-insertLocation, '//titleStmt/respStmt',
+            arg-insertPosition, 'After'
+          ));
+    display:block;
+    font-weight:bold;
+    margin-top:2em;
+    border-bottom:2px solid gray;
+    margin-bottom:1em;
+    font-family:sans-serif;
+    color:gray;
+}
+
+titleStmt respStmt {
+    display: block;
+}
+
+titleStmt resp {
+    font-style: italic;
+    margin-right: 1em;
+}
+
+/*Funding*/
+titleStmt funder:first-of-type:before {
+    content:"Funding";
+    display:block;
+    font-weight:bold;
+    margin-top:2em;
+    border-bottom:2px solid gray;
+    margin-bottom:1em;
+    font-family:sans-serif;
+    color:gray;
+}
+
+titleStmt funder orgName:before {
+   display:inline;
+   content:"Organisation: ";
+   font-weight: 600;
+   font-family:sans-serif;
+   margin-right:1em;
+}
+
+titleStmt funder name:before {
+    display:inline;
+    content:"Funding line: ";
+    font-family:sans-serif;
+    font-weight: 600;
+    margin-right:1em;
+}
+
+titleStmt funder orgName {
+    display: block;
+}
+
+titleStmt funder name {
+    display: block;
 }
 
 /* Publication Metadata */
@@ -141,6 +245,41 @@ publicationStmt:before {
     margin-bottom:1em;
     font-family:sans-serif;
     color:gray;
+}
+
+publicationStmt authority:before {
+    display:inline;
+    content:"Authority: "; /*Maybe use more descriptive label*/
+    font-family:sans-serif;
+    font-weight: bold;
+    margin-right:1em;
+}
+
+publicationStmt authority {
+    display: block;
+}
+
+publicationStmt publisher:before {
+    display:inline;
+    content:"Publisher: ";
+    font-family:sans-serif;
+    font-weight: bold;
+    margin-right:1em;
+}
+
+publicationStmt publisher {
+    display: inline;
+}
+
+publicationStmt idno[type="URL"] {
+    display:inline;
+    font-family:sans-serif;
+    font-size:small;
+    color:blue;
+    text-decoration:underline;
+    content:' [ansehen]';
+    link: "./text()/string())";
+    margin-left:2em;
 }
 
 availability {
@@ -168,10 +307,10 @@ publicationStmt date {
 publicationStmt date:before {
   display:inline;
   content:"Publication year:";
-    font-family:sans-serif;
-    font-size:small;
-    color:gray;
-    margin-right:3em;
+  font-family:sans-serif;
+  font-size:small;
+  color:gray;
+  margin-right:3em;
 }
 
 publicationStmt idno {
@@ -196,9 +335,8 @@ licence:before {
     display:inline;
     content:"Licence: ";
     font-family:sans-serif;
-    font-size:small;
-    color:gray;
-    margin-right:3em;
+    font-weight: 600;
+    margin-right:1em;
 }
 
 /* 
@@ -234,7 +372,6 @@ publicationStmt idno[subtype=transkribus]:before {
 profileDesc {
     display:block;
 }
-
 
 profileDesc:after {
     display:block;
@@ -400,6 +537,26 @@ sourceDesc:before {
     margin-bottom:1em;
     font-family:sans-serif;
     color:gray;
+}
+
+sourceDesc bibl[type="digitalSource"]:before {
+    display:inline;
+    content:"Digital: ";
+    font-family:sans-serif;
+    font-weight: bold;
+    margin-right:1em;
+}
+
+sourceDesc bibl[type="originalSource"]:before {
+    display:inline;
+    content:"Original: ";
+    font-family:sans-serif;
+    font-weight: bold;
+    margin-right:1em;
+}
+
+sourceDesc bibl {
+    display: block;
 }
 
 /* 
