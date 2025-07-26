@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.oxygenxml.com/ns/extension http://www.oxygenxml.com/ns/extension/extensions.xsd">
   <xt:extension id="dracor">
-    <xt:location href="https://github.com/dracor-org/dracor-oxygen-framework/releases/download/v1.0.0-beta.1/einakter-v1.0.0-beta.1.zip"/>
+    <xt:location href="https://github.com/dracor-org/dracor-oxygen-framework/releases/download/v1.0.0-beta.1/dracor-oxygen-framework-v1.0.0-beta.1.zip"/>
     <xt:version>1.0.0-beta.1</xt:version>
     <xt:oxy_version>26.0+</xt:oxy_version>
     <xt:type>framework</xt:type>
