@@ -5,7 +5,7 @@ the [DraCor project](https://dracor.org).
 
 ## Usage
 
-This Framework can be added as an add-on to the Oxygen XML Editor as follows:
+This framework can be added as an add-on to the Oxygen XML Editor as follows:
 
 * Under "Options" > "Preferences" > "Add-ons" add the URL
   https://dracor-org.github.io/dracor-oxygen-framework/updateSite.xml to the
