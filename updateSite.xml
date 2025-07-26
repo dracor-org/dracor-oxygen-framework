@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xt:extensions xmlns:xt="http://www.oxygenxml.com/ns/extension"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.oxygenxml.com/ns/extension http://www.oxygenxml.com/ns/extension/extensions.xsd">
+  <xt:extension id="dracor">
+    <xt:location href="https://github.com/dracor-org/dracor-oxygen-framework/releases/download/v1.0.0-beta.1/einakter-v1.0.0-beta.1.zip"/>
+    <xt:version>1.0.0-beta.1</xt:version>
+    <xt:oxy_version>26.0+</xt:oxy_version>
+    <xt:type>framework</xt:type>
+    <xt:author>dracor.org</xt:author>
+    <xt:name>DraCor</xt:name>
+    <xt:description xmlns="http://www.w3.org/1999/xhtml">
+      <h1>DraCor Editing and Validation</h1>
+      <p>
+        This add-on supports editing and validating TEI files for the DraCor
+        project.
+      </p>
+      <h2>Authors</h2>
+      <ul>
+        <li>Ingo Börner</li>
+        <li>Marek Vician</li>
+      </ul>
+    </xt:description>
+    <xt:license>MIT</xt:license>
+  </xt:extension>
+</xt:extensions>

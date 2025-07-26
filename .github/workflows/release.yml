@@ -1,0 +1,55 @@
+name: Generate release assets
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+jobs:
+  release_assets:
+    runs-on: ubuntu-latest
+    if: github.event.release.tag_name
+    steps:
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+
+      - name: Create ZIP archive
+        run: zip -r dracor.zip dracor
+
+      - name: Upload ZIP archive
+        uses: actions/upload-release-asset@e8f9f06c4b078e705bd2ea027f0926603fc9b4d5 # v1.0.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./dracor.zip
+          asset_name: dracor-oxygen-framework-${{ github.event.release.tag_name }}.zip
+          asset_content_type: application/zip
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+
+      - name: Create dist
+        run: |
+          mkdir dist
+          cp updateSite.xml dist
+
+      - name: Upload static files as artifact
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
+        with:
+          path: dist/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      id-token: write
+      pages: write
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
