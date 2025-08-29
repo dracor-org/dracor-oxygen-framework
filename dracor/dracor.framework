@@ -1441,7 +1441,7 @@
 									<String>Validation_scenario</String>
 								</field>
 								<field name="name">
-									<String>dracor schema (production)</String>
+									<String>DraCor Schema 1.0.0</String>
 								</field>
 							</validationScenario>
 							<validationScenario>
@@ -1500,7 +1500,7 @@
 									<String>Validation_scenario</String>
 								</field>
 								<field name="name">
-									<String>dracor schema (stating)</String>
+									<String>DraCor Schema (development version)</String>
 								</field>
 							</validationScenario>
 							<validationScenario>
