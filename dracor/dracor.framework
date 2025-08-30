@@ -1441,7 +1441,7 @@
 									<String>Validation_scenario</String>
 								</field>
 								<field name="name">
-									<String>DraCor Schema 1.0.0</String>
+									<String>DraCor Schema 1.0.1</String>
 								</field>
 							</validationScenario>
 							<validationScenario>

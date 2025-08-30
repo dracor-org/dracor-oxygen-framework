@@ -5,10 +5,10 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2025-07-13T23:38:21Z. 2025. 
-TEI Edition: P5 Version 4.9.0. Last updated on 24th January 2025, revision f73186978 
-TEI Edition Location: https://www.tei-c.org/Vault/P5/4.9.0/ 
- DraCor Schema 1.0.0 
+Schema generated from ODD source 2025-08-29T23:19:59Z. 2025. 
+TEI Edition: P5 Version 4.10.1. Last updated on 28th August 2025, revision 3cd82e7a3 
+TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.1/ 
+ DraCor Schema 1.0.1 
 --><!--CC BY-->
    <define name="tei_macro.abContent">
       <zeroOrMore>
@@ -201,7 +201,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.9.0/
    <define name="tei_att.citing.attribute.unit">
       <optional>
          <attribute name="unit">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies the unit of information conveyed by the element, e.g. columns, pages, volume, entry.
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies the unit of information conveyed by the element.
 Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line; 5] chapter (chapter); 6] part; 7] column; 8] entry</a:documentation>
             <choice>
                <value>volume</value>
@@ -6005,16 +6005,17 @@ Suggested values include: 1] F (Final); 2] I (Initial); 3] M (Medial)</a:documen
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(speech) contains an individual speech in a performance text, or a passage presented as such in a prose or verse text. [3.13.2. Core Tags for Drama 3.13. Passages of Verse or Drama 7.2.2. Speeches and Speakers]</a:documentation>
          <group>
             <zeroOrMore>
-               <ref name="tei_model.global"/>
+               <choice>
+                  <ref name="tei_model.global"/>
+                  <ref name="tei_model.stageLike"/>
+               </choice>
             </zeroOrMore>
-            <rng:optional xmlns:rng="http://relaxng.org/ns/structure/1.0">
-               <rng:group>
-                  <rng:ref name="tei_speaker"/>
-                  <rng:zeroOrMore>
-                     <rng:ref name="tei_model.global"/>
-                  </rng:zeroOrMore>
-               </rng:group>
-            </rng:optional>
+            <group>
+               <ref name="tei_speaker"/>
+               <zeroOrMore>
+                  <ref name="tei_model.global"/>
+               </zeroOrMore>
+            </group>
             <oneOrMore>
                <choice>
                   <ref name="tei_lg"/>
@@ -8443,11 +8444,12 @@ Suggested values include: 1] act (Act); 2] scene (Scene)</a:documentation>
    </define>
    <define name="tei_closer">
       <element name="closer">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(closer) groups together salutations, datelines, and similar phrases appearing as a final group at the end of a division, especially of a letter. [4.2.2. Openers and Closers 4.2. Elements Common to All Divisions]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(closer) groups together salutations, datelines, bylines, and similar phrases appearing as a final group at the end of a division, especially of a letter. [4.2.2. Openers and Closers 4.2. Elements Common to All Divisions]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
                <ref name="tei_model.gLike"/>
+               <ref name="tei_byline"/>
                <ref name="tei_signed"/>
                <ref name="tei_dateline"/>
                <ref name="tei_salute"/>
@@ -8800,7 +8802,7 @@ Suggested values include: 1] main (Main title); 2] sub (Subtitle)</a:documentati
    <define name="tei_att.global.linking.attribute.next">
       <optional>
          <attribute name="next">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to the next element of a virtual aggregate of which the current element is part.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(next) points to the next element of a virtual aggregate of which the current element is part.</a:documentation>
             <data type="anyURI">
                <param name="pattern">\S+</param>
             </data>
@@ -10169,10 +10171,10 @@ Suggested values include: 1] patronym (Patronym)</a:documentation>
                <choice>
                   <ref name="tei_model.noteLike"/>
                   <ref name="tei_model.biblLike"/>
+                  <ref name="tei_model.ptrLike"/>
                   <ref name="tei_linkGrp"/>
                   <ref name="tei_link"/>
                   <ref name="tei_idno"/>
-                  <ref name="tei_ptr"/>
                </choice>
             </zeroOrMore>
             <zeroOrMore>
@@ -10382,7 +10384,7 @@ Suggested values include: 1] print (Date printed); 2] premiere (Date premiered);
                <choice>
                   <ref name="tei_model.personPart"/>
                   <ref name="tei_model.global"/>
-                  <ref name="tei_ptr"/>
+                  <ref name="tei_model.ptrLike"/>
                </choice>
             </zeroOrMore>
          </choice>
