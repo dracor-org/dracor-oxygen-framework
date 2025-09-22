@@ -5,7 +5,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main"><!-- title --></title>
+            <title><!-- title --></title>
             <author>
                <persName xml:lang="eng"><!-- author's name --></persName>
                <idno type="wikidata"><!-- Wikidata ID of the author --></idno>
