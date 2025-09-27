@@ -89,18 +89,18 @@
 											<Boolean>true</Boolean>
 										</field>
 									</cssFile>
-                  <cssFile>
+									<cssFile>
 										<field name="href">
-                      <String>${framework}/css/neolatdracor_editing.css</String>
+											<String>${framework}/css/neolatdracor_editing.css</String>
 										</field>
-                    <field name="title">
+										<field name="title">
 											<String>NeoLatDraCor Editing</String>
-                    </field>
-                    <field name="alternate">
+										</field>
+										<field name="alternate">
 											<Boolean>true</Boolean>
 										</field>
 									</cssFile>
-                  <cssFile>
+									<cssFile>
 										<field name="href">
 											<String>${framework}/css/dedupe_characters.css</String>
 										</field>
@@ -397,7 +397,7 @@
 											<Boolean>false</Boolean>
 										</field>
 									</action>
-                  <action>
+									<action>
 										<field name="id">
 											<String>head</String>
 										</field>
@@ -442,8 +442,8 @@
 										<field name="enabledInReadOnlyContext">
 											<Boolean>false</Boolean>
 										</field>
-                  </action>
-                  <action>
+									</action>
+									<action>
 										<field name="id">
 											<String>dedupe_characters</String>
 										</field>
@@ -489,7 +489,7 @@
 											<Boolean>false</Boolean>
 										</field>
 									</action>
-                  <action>
+									<action>
 										<field name="id">
 											<String>verse_line</String>
 										</field>
@@ -535,7 +535,7 @@
 											<Boolean>false</Boolean>
 										</field>
 									</action>
-                  <action>
+									<action>
 										<field name="id">
 											<String>foreign</String>
 										</field>
@@ -581,7 +581,7 @@
 											<Boolean>false</Boolean>
 										</field>
 									</action>
-                  <action>
+									<action>
 										<field name="id">
 											<String>castList</String>
 										</field>
@@ -627,7 +627,7 @@
 											<Boolean>false</Boolean>
 										</field>
 									</action>
-                  <action>
+									<action>
 										<field name="id">
 											<String>castItem</String>
 										</field>
@@ -673,7 +673,7 @@
 											<Boolean>false</Boolean>
 										</field>
 									</action>
-                  <action>
+									<action>
 										<field name="id">
 											<String>castGroup</String>
 										</field>
@@ -718,7 +718,7 @@
 										<field name="enabledInReadOnlyContext">
 											<Boolean>false</Boolean>
 										</field>
-                  </action>
+									</action>
 									<action>
 										<field name="id">
 											<String>roleDesc</String>
