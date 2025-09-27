@@ -20,7 +20,7 @@
 								<Integer>6</Integer>
 							</field>
 							<field name="uri">
-								<String>https://dracor.org/schema.rng</String>
+								<String>${framework}/schemas/schema.rng</String>
 							</field>
 						</docTypeSchema>
 					</field>
@@ -1045,7 +1045,7 @@
 						<documentTypeRule-array>
 							<documentTypeRule>
 								<field name="namespace">
-									<String>*</String>
+									<String>http://www.tei-c.org/ns/1.0</String>
 								</field>
 								<field name="rootElem">
 									<String>*</String>
@@ -1060,13 +1060,13 @@
 									<String></String>
 								</field>
 								<field name="attributeLocalName">
-									<String>*</String>
+									<String>type</String>
 								</field>
 								<field name="attributeNamespace">
 									<String>*</String>
 								</field>
 								<field name="attributeValue">
-									<String>*</String>
+									<String>dracor</String>
 								</field>
 							</documentTypeRule>
 						</documentTypeRule-array>
