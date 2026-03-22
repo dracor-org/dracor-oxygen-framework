@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Basic File to Test the Features of DraCor Plays -->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="tst000000" xml:lang="eng">
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Basic file to test the features of DraCor plays -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="dracor" xml:id="tst000000" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -17,11 +17,25 @@
             </publicationStmt>
             <sourceDesc>
                 <bibl type="digitalSource">
-                    <name>dracor-schema GitHub Repository</name>
-                    <bibl type="originalSource">
-                        <title>Slides of the Hebrew and Yiddish DraCor Working group meeting on 2022-11-14 by Daniil Skorinkin</title>
-                    </bibl>
+                    <ref target="https://github.com/dracor-org/dracor-schema">
+                        dracor-schema GitHub Repository
+                    </ref>
+                    <availability>
+                        <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+                    </availability>
                 </bibl>
+                <bibl type="originalSource">
+                    Slides of the Hebrew and Yiddish DraCor Working group
+                    meeting on 2022-11-14 by Daniil Skorinkin
+                </bibl>
+                <listEvent>
+                    <event type="print" when="2023">
+                        <desc/>
+                    </event>
+                    <event type="written" when="2022">
+                        <desc/>
+                    </event>
+                </listEvent>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -42,37 +56,26 @@
                 </listPerson>
             </particDesc>
         </profileDesc>
-        <revisionDesc>
-            <change when="2022-11-07">Describe Change!</change>
-        </revisionDesc>
     </teiHeader>
-    <standOff>
-        <listEvent>
-            <event type="print" when="2023">
-                <desc/>
-            </event>
-            <event type="written" when="2022">
-                <desc/>
-            </event>
-        </listEvent>
-    </standOff>
     <text>
         <front>
-            <div type="front">
-                <head>Ham, a tragedy By William S</head>
-            </div>
-            <div type="Dramatis_Personae">
-                <castList>
-                    <head>Dramatis Personae</head>
-                    <castItem>Ham</castItem>
-                    <castItem>Egg</castItem>
-                    <castGroup>
-                        <castItem>Sausage</castItem>
-                        <castItem>Bacon</castItem>
-                        <roleDesc>Vikings</roleDesc>
-                    </castGroup>
-                </castList>
-            </div>
+            <titlePage>
+                <docTitle>
+                    <titlePart>Ham,</titlePart>
+                    <titlePart>a tragedy</titlePart>
+                </docTitle>
+                <docAuthor>By William S</docAuthor>
+            </titlePage>
+            <castList>
+                <head>Dramatis Personae</head>
+                <castItem>Ham</castItem>
+                <castItem>Egg</castItem>
+                <castGroup>
+                    <castItem>Sausage</castItem>
+                    <castItem>Bacon</castItem>
+                    <roleDesc>Vikings</roleDesc>
+                </castGroup>
+            </castList>
         </front>
         <body>
             <div type="act">
@@ -106,7 +109,6 @@
                     <stage>The End.</stage>
                 </div>
             </div>
-            
         </body>
     </text>
 </TEI>

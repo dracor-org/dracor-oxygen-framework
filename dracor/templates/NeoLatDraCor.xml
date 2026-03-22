@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="neolatXXXXXX" xml:lang="lat">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="neolatXXXXXX" xml:lang="la">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title><!-- title --></title>
             <author>
-               <persName xml:lang="eng"><!-- author's name --></persName>
+               <persName xml:lang="la"><!-- author's name --></persName>
                <idno type="wikidata"><!-- Wikidata ID of the author --></idno>
             </author>
             <respStmt>
@@ -35,15 +35,35 @@
          </publicationStmt>
          <sourceDesc>
             <bibl type="digitalSource">
-               <name><!-- Name of the Digital Source --></name>
+               <ref target="URL of digital source"><!-- Name of the Digital Source --></ref>
+               <availability>
+                  <licence target="URL of licence"><!-- Name of the Licence --></licence>
+               </availability>
             </bibl>
-            <bibl type="originalSource"><!-- Source --></bibl>
+
+            <bibl type="originalSource">
+               <author><!-- Author Name --></author>:
+               <title><!-- Title --></title>.
+               <pubPlace><!-- Publication Place --></pubPlace>:
+               <publisher><!-- Publisher --></publisher>,
+               <date><!-- Year --></date>.
+            </bibl>
+
+            <bibl type="wikidata">
+               <idno><!-- Wikidata QID --></idno>
+            </bibl>
+
+            <listEvent>
+               <event type="print" when=""><!-- add year -->
+                  <desc/>
+               </event>
+            </listEvent>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
          <particDesc>
             <listPerson>
-               <person xml:id="character_id" sex="" role="">
+               <person xml:id="character_id">
                   <persName><!-- Character Name --></persName>
                </person>
                <!-- additional characters -->
@@ -57,19 +77,11 @@
          </textClass>
          <creation>
             <region>
-               <ref target=""><!-- Name of the Region --></ref>
+               <ref target="http://www.wikidata.org/entity/..."><!-- Name of the Region --></ref>
             </region>
          </creation>
       </profileDesc>
    </teiHeader>
-   <standOff>
-      <!-- listRelation -->
-      <listEvent>
-         <event type="print" when="">
-            <desc/>
-         </event>
-      </listEvent>
-   </standOff>
    <text>
       <front>
          <titlePage>
