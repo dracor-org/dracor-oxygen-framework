@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="" xml:lang="">
   <teiHeader>
@@ -12,7 +12,6 @@
             <surname></surname>
           </persName>
           <idno type="wikidata"></idno>
-          <idno type="pnd"></idno>
         </author>
       </titleStmt>
       <publicationStmt>
@@ -24,76 +23,79 @@
       </publicationStmt>
       <sourceDesc>
         <bibl type="digitalSource">
-          <name></name>
-          <idno type="URL"></idno>
+          <ref target="URL of digital source"></ref>
           <availability status="free">
             <p>In the public domain.</p>
           </availability>
-          <bibl type="originalSource">
-            <title>Autor: Title. Place: Publisher, 0000.</title>
-            </bibl>
         </bibl>
+        <bibl type="originalSource">
+          <author>Author</author>:
+          <title>Title</title>.
+          <pubPlace>Place</pubPlace>:
+          <publisher>Publisher</publisher>,
+          <date>0000</date>.
+        </bibl>
+        <!--
+        <bibl type="wikidata">
+          <idno>Q...</idno>
+        </bibl>
+
+        <listEvent>
+          <event type="print" when="">
+            <desc/>
+          </event>
+          <event type="premiere" when="">
+            <desc/>
+          </event>
+          <event type="written" when="">
+            <desc/>
+          </event>
+        </listEvent>
+        -->
       </sourceDesc>
     </fileDesc>
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="person-id" sex="">
+          <person xml:id="person-id">
             <persName></persName>
           </person>
-          <personGrp xml:id="group-id" sex="">
+          <personGrp xml:id="group-id">
             <name></name>
           </personGrp>
+          <!--
           <listRelation type="">
             <relation name="" active="#" passive="#"/>
           </listRelation>
+          -->
         </listPerson>
       </particDesc>
       <textClass>
         <keywords>
-          <term type="genreTitle"/>
+          <term type="genreTitle"></term>
         </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/"></classCode>
       </textClass>
     </profileDesc>
-    <revisionDesc>
-      <listChange>
-        <change when="0000-00-00"></change>
-      </listChange>
-    </revisionDesc>
   </teiHeader>
-  <standOff>
-    <listEvent>
-      <event type="print" when="">
-        <desc/>
-      </event>
-      <event type="premiere" when="">
-        <desc/>
-      </event>
-      <event type="written" when="">
-        <desc/>
-      </event>
-    </listEvent>
-    <listRelation>
-      <relation name="wikidata" active="https://dracor.org/entity/" passive="http://www.wikidata.org/entity/"/>
-    </listRelation>
-  </standOff>
   <text>
     <front>
-      <div type="front">
-        <head></head>
-      </div>
-      <!-- ... -->
-      <div type="Dramatis_Personae">
-        <castList>
-          <head>Personen.</head>
-          <castItem>Luther.</castItem>
-          <castGroup>
-            <castItem></castItem>
-            <castItem></castItem>
-            <roleDesc></roleDesc>
-          </castGroup>
-        </castList>
-      </div>
+      <titlePage>
+        <docAuthor></docAuthor>
+        <docTitle>
+          <titlePart type="main"></titlePart>
+          <titlePart type="sub"></titlePart>
+        </docTitle>
+      </titlePage>
+      <castList>
+        <head>Personen.</head>
+        <castItem>Luther.</castItem>
+        <castGroup>
+          <castItem></castItem>
+          <castItem></castItem>
+          <roleDesc></roleDesc>
+        </castGroup>
+      </castList>
       <set>
         <p>Setting</p>
       </set>
@@ -111,8 +113,8 @@
             <p>Text</p>
           </sp>
         </div>
-          <trailer>Ende.</trailer>
-        </div>
+        <trailer>Ende.</trailer>
+      </div>
     </body>
   </text>
 </TEI>
