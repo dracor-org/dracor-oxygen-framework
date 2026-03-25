@@ -50,11 +50,14 @@
         <bibl type="wikidata">
           <idno><!-- Wikidata QID --></idno>
         </bibl>
+        <!-- uncomment listEvent to add years -->
+        <!--
         <listEvent>
-          <event type="print" when=""><!-- add year -->
+          <event type="print" when="">
             <desc/>
           </event>
         </listEvent>
+        -->
       </sourceDesc>
     </fileDesc>
     <profileDesc>
