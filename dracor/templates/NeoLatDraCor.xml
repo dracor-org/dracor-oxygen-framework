@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="neolatXXXXXX" xml:lang="la">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="dracor" xml:id="neolatXXXXXX" xml:lang="la">
   <teiHeader>
     <fileDesc>
       <titleStmt>
