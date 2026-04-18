@@ -63,7 +63,7 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="character_id">
+          <person xml:id="character-id">
             <persName><!-- Character Name --></persName>
           </person>
           <!-- additional characters -->
@@ -95,7 +95,7 @@
         <div type="scene" n="1">
           <head><!-- heading of first act --></head>
           <stage><!-- stage direction --></stage>
-          <sp who="#character_id">
+          <sp who="#character-id">
             <speaker><!-- Speaker Label --></speaker>
             <l><!-- verse line --></l>
           </sp>
