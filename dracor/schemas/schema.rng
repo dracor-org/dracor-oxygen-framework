@@ -5,10 +5,10 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2026-03-25T13:18:33Z. 2026. 
+Schema generated from ODD source 2026-04-19T13:51:30Z. 2026. 
 TEI Edition: P5 Version 4.11.0. Last updated on 18th February 2026, revision 358d2e48e 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.11.0/ 
- DraCor Schema 1.4.0-rc.2 
+ DraCor Schema 1.4.0 
 --><!--[https://creativecommons.org/licenses/by/4.0/] CC BY 4.0-->
    <define name="tei_macro.abContent">
       <zeroOrMore>
