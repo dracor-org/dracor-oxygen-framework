@@ -5,10 +5,10 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2026-04-19T13:51:30Z. 2026. 
+Schema generated from ODD source 2026-07-19T01:42:03Z. 2026. 
 TEI Edition: P5 Version 4.11.0. Last updated on 18th February 2026, revision 358d2e48e 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.11.0/ 
- DraCor Schema 1.4.0 
+ DraCor Schema 1.5.1 
 --><!--[https://creativecommons.org/licenses/by/4.0/] CC BY 4.0-->
    <define name="tei_macro.abContent">
       <zeroOrMore>
@@ -6238,7 +6238,66 @@ Sample values include: 1] digitalSource (Digital Source); 2] originalSource (Ori
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-l-abstractModel-structure-l-in-l-constraint-rule-21">
+                  id="dracor-l-antilabe-part-sequence-constraint-rule-21">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+                      xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
+                      xmlns:owl="http://www.w3.org/2002/07/owl#"
+                      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:sqf="http://www.schematron-quickfix.com/validator/process"
+                      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="tei:l[@part='I']"
+                      role="warning">
+               <sch:assert test="following::tei:l[1]/@part = ('M', 'F')">
+                    A verse line with part="I" (initial part of an antilabe)
+                    must be followed by a verse line with part="M" or part="F".
+                  </sch:assert>
+            </sch:rule>
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+                      xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
+                      xmlns:owl="http://www.w3.org/2002/07/owl#"
+                      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:sqf="http://www.schematron-quickfix.com/validator/process"
+                      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="tei:l[@part='M']"
+                      role="warning">
+               <sch:assert test="preceding::tei:l[1]/@part = ('I', 'M')">
+                    A verse line with part="M" (medial part of an antilabe)
+                    must be preceded by a verse line with part="I" or part="M".
+                  </sch:assert>
+               <sch:assert test="following::tei:l[1]/@part = ('M', 'F')">
+                    A verse line with part="M" (medial part of an antilabe)
+                    must be followed by a verse line with part="M" or part="F".
+                  </sch:assert>
+            </sch:rule>
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+                      xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
+                      xmlns:owl="http://www.w3.org/2002/07/owl#"
+                      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:sqf="http://www.schematron-quickfix.com/validator/process"
+                      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="tei:l[@part='F']"
+                      role="warning">
+               <sch:assert test="preceding::tei:l[1]/@part = ('I', 'M')">
+                    A verse line with part="F" (final part of an antilabe)
+                    must be preceded by a verse line with part="I" or part="M".
+                  </sch:assert>
+            </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="dracor-l-abstractModel-structure-l-in-l-constraint-rule-24">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -6348,7 +6407,7 @@ Suggested values include: 1] F (Final); 2] I (Initial); 3] M (Medial)</a:documen
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-lg-atleast1oflggapl-constraint-rule-22">
+                  id="dracor-lg-atleast1oflggapl-constraint-rule-25">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -6365,7 +6424,7 @@ Suggested values include: 1] F (Final); 2] I (Initial); 3] M (Medial)</a:documen
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-lg-abstractModel-structure-lg-in-l-constraint-rule-23">
+                  id="dracor-lg-abstractModel-structure-lg-in-l-constraint-rule-26">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -6405,7 +6464,7 @@ Suggested values include: 1] F (Final); 2] I (Initial); 3] M (Medial)</a:documen
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-sp-network_sp_with_who_attr-constraint-rule-24">
+                  id="dracor-sp-network_sp_with_who_attr-constraint-rule-27">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -6427,7 +6486,7 @@ Suggested values include: 1] F (Final); 2] I (Initial); 3] M (Medial)</a:documen
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-sp-network_unlinked_sp-constraint-rule-25">
+                  id="dracor-sp-network_unlinked_sp-constraint-rule-28">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -6678,7 +6737,7 @@ Sample values include: 1] index; 2] toc; 3] figlist; 4] tablist</a:documentation
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-titleStmt-play_sub_title-constraint-rule-26">
+                  id="dracor-titleStmt-play_sub_title-constraint-rule-29">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -6782,7 +6841,7 @@ Sample values include: 1] index; 2] toc; 3] figlist; 4] tablist</a:documentation
          </choice>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-publicationStmt-corpus_xml_corpus_name-constraint-rule-27">
+                  id="dracor-publicationStmt-corpus_xml_corpus_name-constraint-rule-30">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -6806,7 +6865,7 @@ Sample values include: 1] index; 2] toc; 3] figlist; 4] tablist</a:documentation
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-publicationStmt-corpus_xml_corpus_name_syntax-constraint-rule-28">
+                  id="dracor-publicationStmt-corpus_xml_corpus_name_syntax-constraint-rule-31">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -6829,7 +6888,7 @@ Sample values include: 1] index; 2] toc; 3] figlist; 4] tablist</a:documentation
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-publicationStmt-corpus_xml_repository_url-constraint-rule-29">
+                  id="dracor-publicationStmt-corpus_xml_repository_url-constraint-rule-32">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -6853,7 +6912,7 @@ Sample values include: 1] index; 2] toc; 3] figlist; 4] tablist</a:documentation
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-publicationStmt-corpus_xml_deprecation-constraint-rule-30">
+                  id="dracor-publicationStmt-corpus_xml_deprecation-constraint-rule-33">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -6912,6 +6971,27 @@ Sample values include: 1] index; 2] toc; 3] figlist; 4] tablist</a:documentation
                <ref name="tei_idno"/>
             </choice>
          </zeroOrMore>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="dracor-idno-idno_wikidata_qid-constraint-rule-34">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+                      xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
+                      xmlns:owl="http://www.w3.org/2002/07/owl#"
+                      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:sqf="http://www.schematron-quickfix.com/validator/process"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="tei:idno[@type eq 'wikidata']">
+               <sch:assert test="matches(normalize-space(.), '^Q[1-9]\d*$')">
+                    The content of an &lt;idno type="wikidata"&gt; must be a
+                    Wikidata QID, e.g. "Q42", not a full URL.
+                  </sch:assert>
+            </sch:rule>
+         </pattern>
          <ref name="tei_att.global.attribute.xmlid"/>
          <ref name="tei_att.global.attribute.n"/>
          <ref name="tei_att.global.attribute.xmllang"/>
@@ -6997,7 +7077,7 @@ Suggested values include: 1] URL; 2] wikidata; 3] pnd; 4] URI; 5] repo (Reposito
          <ref name="tei_macro.specialPara"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-licence-licence_target_url-constraint-rule-31">
+                  id="dracor-licence-licence_target_url-constraint-rule-35">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -7082,7 +7162,7 @@ Suggested values include: 1] URL; 2] wikidata; 3] pnd; 4] URI; 5] repo (Reposito
          </choice>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-sourceDesc-digital_original_source_in_sourceDesc-constraint-rule-32">
+                  id="dracor-sourceDesc-digital_original_source_in_sourceDesc-constraint-rule-36">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -7105,7 +7185,7 @@ Suggested values include: 1] URL; 2] wikidata; 3] pnd; 4] URI; 5] repo (Reposito
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-sourceDesc-sources_count_and_nesting-constraint-rule-33">
+                  id="dracor-sourceDesc-sources_count_and_nesting-constraint-rule-37">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -7136,7 +7216,7 @@ Suggested values include: 1] URL; 2] wikidata; 3] pnd; 4] URI; 5] repo (Reposito
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-sourceDesc-digital_source_use_ref-constraint-rule-34">
+                  id="dracor-sourceDesc-digital_source_use_ref-constraint-rule-38">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -7163,7 +7243,7 @@ Suggested values include: 1] URL; 2] wikidata; 3] pnd; 4] URI; 5] repo (Reposito
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-sourceDesc-digital_source_availability-constraint-rule-35">
+                  id="dracor-sourceDesc-digital_source_availability-constraint-rule-39">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -7359,7 +7439,7 @@ Suggested values include: 1] URL; 2] wikidata; 3] pnd; 4] URI; 5] repo (Reposito
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-quotation-quotationContents-constraint-rule-36">
+                  id="dracor-quotation-quotationContents-constraint-rule-40">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -7644,7 +7724,7 @@ Sample values include: 1] first-line; 2] first-letter; 3] before; 4] after</a:do
          </attribute>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-citeStructure-match-citestructure-outer-match-constraint-rule-37">
+                  id="dracor-citeStructure-match-citestructure-outer-match-constraint-rule-41">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -7662,7 +7742,7 @@ Sample values include: 1] first-line; 2] first-letter; 3] before; 4] after</a:do
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-citeStructure-match-citestructure-inner-match-constraint-rule-38">
+                  id="dracor-citeStructure-match-citestructure-inner-match-constraint-rule-42">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -8356,7 +8436,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-TEI-xml_model_or_type_dracor_on_root_tei_element-constraint-rule-39">
+                  id="dracor-TEI-xml_model_or_type_dracor_on_root_tei_element-constraint-rule-43">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -8381,7 +8461,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-TEI-valid_dracor_ids_on_root_tei_element-constraint-rule-40">
+                  id="dracor-TEI-valid_dracor_ids_on_root_tei_element-constraint-rule-44">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -8567,7 +8647,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-body-network_check_basic_play_structure_div-constraint-rule-41">
+                  id="dracor-body-network_check_basic_play_structure_div-constraint-rule-45">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -8588,7 +8668,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-body-network_check_basic_play_structure_sp-constraint-rule-42">
+                  id="dracor-body-network_check_basic_play_structure_sp-constraint-rule-46">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -8609,7 +8689,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-body-network_play_without_speaking_characters-constraint-rule-43">
+                  id="dracor-body-network_play_without_speaking_characters-constraint-rule-47">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -8752,7 +8832,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-div-abstractModel-structure-div-in-l-constraint-rule-44">
+                  id="dracor-div-abstractModel-structure-div-in-l-constraint-rule-48">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -8771,7 +8851,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-div-abstractModel-structure-div-in-ab-or-p-constraint-rule-45">
+                  id="dracor-div-abstractModel-structure-div-in-ab-or-p-constraint-rule-49">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -9356,7 +9436,7 @@ Suggested values include: 1] main (Main title); 2] sub (Subtitle)</a:documentati
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-link-linkTargets3-constraint-rule-46">
+                  id="dracor-link-linkTargets3-constraint-rule-50">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -9406,7 +9486,7 @@ Suggested values include: 1] main (Main title); 2] sub (Subtitle)</a:documentati
          <ref name="tei_macro.abContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-ab-abstractModel-structure-ab-in-l-constraint-rule-47">
+                  id="dracor-ab-abstractModel-structure-ab-in-l-constraint-rule-51">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -9592,7 +9672,7 @@ Suggested values include: 1] d (days); 2] h (hours); 3] min (minutes); 4] s (sec
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-join-joinTargets3-constraint-rule-48">
+                  id="dracor-join-joinTargets3-constraint-rule-52">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -9776,7 +9856,7 @@ Suggested values include: 1] d (days); 2] h (hours); 3] min (minutes); 4] s (sec
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-standOff-deprecate-standoff-wikidata-constraint-rule-49">
+                  id="dracor-standOff-deprecate-standoff-wikidata-constraint-rule-53">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -9800,7 +9880,7 @@ Suggested values include: 1] d (days); 2] h (hours); 3] min (minutes); 4] s (sec
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-standOff-deprecate-standoff-events-constraint-rule-50">
+                  id="dracor-standOff-deprecate-standoff-events-constraint-rule-54">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -11708,7 +11788,31 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
          </choice>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-person-person_sex-constraint-rule-51">
+                  id="dracor-person-person_ana_wikidata_deprecation-constraint-rule-55">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+                      xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
+                      xmlns:owl="http://www.w3.org/2002/07/owl#"
+                      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:sqf="http://www.schematron-quickfix.com/validator/process"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="tei:particDesc//tei:person[@ana]"
+                      see="https://dracor.org/doc/odd#section-character-concept-realizations"
+                      role="warning">
+               <sch:report test="matches(@ana, 'wikidata\.org/(entity|wiki)/Q\d+$')">
+                    Using @ana for Wikidata links on &lt;person&gt; is
+                    deprecated. Use &lt;idno type="wikidata"&gt;Q…&lt;/idno&gt;
+                    instead. Apply migration 007-ana-to-idno.xsl to update.
+                  </sch:report>
+            </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="dracor-person-person_sex-constraint-rule-56">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -11729,28 +11833,8 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
                   </sch:assert>
             </sch:rule>
          </pattern>
-         <ref name="tei_att.global.attribute.n"/>
-         <ref name="tei_att.global.attribute.xmllang"/>
-         <ref name="tei_att.global.attribute.xmlbase"/>
-         <ref name="tei_att.global.attribute.xmlspace"/>
-         <ref name="tei_att.global.linking.attribute.corresp"/>
-         <ref name="tei_att.global.linking.attribute.synch"/>
-         <ref name="tei_att.global.linking.attribute.sameAs"/>
-         <ref name="tei_att.global.linking.attribute.copyOf"/>
-         <ref name="tei_att.global.linking.attribute.next"/>
-         <ref name="tei_att.global.linking.attribute.prev"/>
-         <ref name="tei_att.global.linking.attribute.exclude"/>
-         <ref name="tei_att.global.linking.attribute.select"/>
-         <ref name="tei_att.global.analytic.attribute.ana"/>
-         <ref name="tei_att.global.rendition.attribute.rend"/>
-         <ref name="tei_att.global.responsibility.attribute.cert"/>
-         <ref name="tei_att.global.responsibility.attribute.resp"/>
-         <ref name="tei_att.global.source.attribute.source"/>
+         <ref name="tei_att.global.attributes"/>
          <ref name="tei_att.sortable.attributes"/>
-         <attribute name="xml:id">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifier) provides a unique identifier for the element bearing the attribute.</a:documentation>
-            <data type="ID"/>
-         </attribute>
          <optional>
             <attribute name="role">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies a primary role or classification for the person.</a:documentation>
@@ -11886,7 +11970,31 @@ Suggested values include: 1] FEMALE (female); 2] MALE (male); 3] UNKNOWN (unknow
          </choice>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-personGrp-personGrp_sex-constraint-rule-52">
+                  id="dracor-personGrp-personGrp_ana_wikidata_deprecation-constraint-rule-57">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+                      xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
+                      xmlns:owl="http://www.w3.org/2002/07/owl#"
+                      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:sqf="http://www.schematron-quickfix.com/validator/process"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="tei:particDesc//tei:personGrp[@ana]"
+                      see="https://dracor.org/doc/odd#section-character-concept-realizations"
+                      role="warning">
+               <sch:report test="matches(@ana, 'wikidata\.org/(entity|wiki)/Q\d+$')">
+                    Using @ana for Wikidata links on &lt;personGrp&gt; is
+                    deprecated. Use &lt;idno type="wikidata"&gt;Q…&lt;/idno&gt;
+                    instead. Apply migration 007-ana-to-idno.xsl to update.
+                  </sch:report>
+            </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="dracor-personGrp-personGrp_sex-constraint-rule-58">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -11907,29 +12015,8 @@ Suggested values include: 1] FEMALE (female); 2] MALE (male); 3] UNKNOWN (unknow
                   </sch:assert>
             </sch:rule>
          </pattern>
-         <ref name="tei_att.global.attribute.n"/>
-         <ref name="tei_att.global.attribute.xmllang"/>
-         <ref name="tei_att.global.attribute.xmlbase"/>
-         <ref name="tei_att.global.attribute.xmlspace"/>
-         <ref name="tei_att.global.linking.attribute.corresp"/>
-         <ref name="tei_att.global.linking.attribute.synch"/>
-         <ref name="tei_att.global.linking.attribute.sameAs"/>
-         <ref name="tei_att.global.linking.attribute.copyOf"/>
-         <ref name="tei_att.global.linking.attribute.next"/>
-         <ref name="tei_att.global.linking.attribute.prev"/>
-         <ref name="tei_att.global.linking.attribute.exclude"/>
-         <ref name="tei_att.global.linking.attribute.select"/>
-         <ref name="tei_att.global.analytic.attribute.ana"/>
-         <ref name="tei_att.global.rendition.attribute.rend"/>
-         <ref name="tei_att.global.responsibility.attribute.cert"/>
-         <ref name="tei_att.global.responsibility.attribute.resp"/>
-         <ref name="tei_att.global.source.attribute.source"/>
+         <ref name="tei_att.global.attributes"/>
          <ref name="tei_att.sortable.attributes"/>
-         <optional>
-            <attribute name="xml:id">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifier) provides a unique identifier for the element bearing the attribute.</a:documentation>
-            </attribute>
-         </optional>
          <optional>
             <attribute name="role">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the role of this group of participants in the interaction.</a:documentation>
@@ -12124,7 +12211,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-relation-ref-or-key-or-name-constraint-rule-53">
+                  id="dracor-relation-ref-or-key-or-name-constraint-rule-59">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -12142,7 +12229,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-relation-active-mutual-constraint-rule-54">
+                  id="dracor-relation-active-mutual-constraint-rule-60">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -12160,7 +12247,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-relation-active-passive-constraint-rule-55">
+                  id="dracor-relation-active-passive-constraint-rule-61">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -12184,7 +12271,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
          <optional>
             <attribute name="name">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a name for the kind of relationship of which this is an instance.
-Suggested values include: 1] parent_of (is parent of); 2] lover_of (is lover of); 3] related_with (is related with); 4] associated_with (is associated with); 5] siblings (are siblings); 6] spouses (are spouses); 7] friends (are friends); 8] wikidata (corresponds to Wikidata entity)</a:documentation>
+Suggested values include: 1] parent_of (is parent of); 2] lover_of (is lover of); 3] related_with (is related with); 4] associated_with (is associated with); 5] siblings (are siblings); 6] spouses (are spouses); 7] friends (are friends)</a:documentation>
                <choice>
                   <value>parent_of</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(is parent of) A character whose ID is included in the <code xmlns="http://www.w3.org/1999/xhtml"
@@ -12207,10 +12294,6 @@ Suggested values include: 1] parent_of (is parent of); 2] lover_of (is lover of)
                   <value>friends</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(are friends) Characters whose IDs are included in <code xmlns="http://www.w3.org/1999/xhtml"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0">@mutual</code> are marked as being friend</a:documentation>
-                  <value>wikidata</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(corresponds to Wikidata entity) The entity whose URI is listed in the <code xmlns="http://www.w3.org/1999/xhtml"
-                           xmlns:rng="http://relaxng.org/ns/structure/1.0">@active</code> attribute corresponds to the entity on Wikidata whose URI is listed in the <code xmlns="http://www.w3.org/1999/xhtml"
-                           xmlns:rng="http://relaxng.org/ns/structure/1.0">@passive</code> attribute.</a:documentation>
                   <data type="token">
                      <param name="pattern">[^\p{C}\p{Z}]+</param>
                   </data>
@@ -12641,7 +12724,29 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
          </choice>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-particDesc-particdesc_person_id-constraint-rule-56">
+                  id="dracor-particDesc-particdesc_person_id-constraint-rule-62">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+                      xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
+                      xmlns:owl="http://www.w3.org/2002/07/owl#"
+                      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:sqf="http://www.schematron-quickfix.com/validator/process"
+                      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                      context="tei:particDesc/tei:listPerson/tei:person | tei:particDesc/tei:listPerson/tei:personGrp"
+                      role="error"
+                      see="https://dracor.org/doc/odd#section-characters">
+               <sch:assert test="@xml:id">
+                    Each &lt;person&gt; or &lt;personGrp&gt; element in 
+                    &lt;particDesc&gt; must provide an @xml:id attribute.
+                  </sch:assert>
+            </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="dracor-particDesc-particdesc_person_id_format-constraint-rule-63">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -12794,7 +12899,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
          <ref name="tei_macro.phraseSeq"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-s-noNestedS-constraint-rule-57">
+                  id="dracor-s-noNestedS-constraint-rule-64">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -12962,7 +13067,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
          <ref name="tei_macro.phraseSeq.limited"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-span-target-from-constraint-rule-58">
+                  id="dracor-span-target-from-constraint-rule-65">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -12981,7 +13086,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-span-targetto-constraint-rule-59">
+                  id="dracor-span-targetto-constraint-rule-66">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -13000,7 +13105,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-span-tonotfrom-constraint-rule-60">
+                  id="dracor-span-tonotfrom-constraint-rule-67">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -13019,7 +13124,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="dracor-span-tofrom-constraint-rule-61">
+                  id="dracor-span-tofrom-constraint-rule-68">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                       xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -13283,7 +13388,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
            prefix="sch1x"
            uri="http://www.ascc.net/xml/schematron"/>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="dracor-play_id-constraint-rule-62">
+            id="dracor-play_id-constraint-rule-69">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                 xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -13304,7 +13409,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="dracor-play_wikidata_id-constraint-rule-63">
+            id="dracor-play_wikidata_id-constraint-rule-70">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                 xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -13327,7 +13432,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="dracor-play_title-constraint-rule-64">
+            id="dracor-play_title-constraint-rule-71">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                 xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -13350,7 +13455,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="dracor-play_subtitle-constraint-rule-65">
+            id="dracor-play_subtitle-constraint-rule-72">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                 xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -13373,7 +13478,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="dracor-play_year_written-constraint-rule-66">
+            id="dracor-play_year_written-constraint-rule-73">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                 xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -13396,7 +13501,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="dracor-play_year_printed-constraint-rule-67">
+            id="dracor-play_year_printed-constraint-rule-74">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                 xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -13419,7 +13524,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="dracor-encoding-hint_play_wikidata_id-constraint-rule-68">
+            id="dracor-encoding-hint_play_wikidata_id-constraint-rule-75">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
                 xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
@@ -13437,6 +13542,26 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
                   The Wikidata ID is expected to be wrapped in an &lt;idno&gt;
                   element and must match the regular expression "Q[1-9]\d*".
                 </sch:assert>
+      </sch:rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="dracor-character_wikidata_id-constraint-rule-76">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+                xmlns:dig="http://www.ics.forth.gr/isl/CRMdig/"
+                xmlns:owl="http://www.w3.org/2002/07/owl#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:sqf="http://www.schematron-quickfix.com/validator/process"
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                context="/"
+                role="information"
+                see="https://dracor.org/doc/odd#character_wikidata_id">
+         <sch:report test="//tei:particDesc//(tei:person|tei:personGrp)/tei:idno[@type eq 'wikidata'][matches(normalize-space(.), '^Q[1-9]\d*$')]">
+                  Supported API feature: character_wikidata_id
+                </sch:report>
       </sch:rule>
    </pattern>
 </grammar>
