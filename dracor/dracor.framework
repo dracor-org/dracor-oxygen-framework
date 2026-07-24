@@ -1036,7 +1036,9 @@
 						</String-array>
 					</field>
 					<field name="xmlCatalogs">
-						<String-array/>
+						<String-array>
+							<String>${framework}/catalog.xml</String>
+						</String-array>
 					</field>
 					<field name="description">
 						<String>Framework for editing TEI files for the DraCor (Drama Corpora) project (https://dracor.org)</String>
