@@ -1,0 +1,3 @@
+[submodule "dracor-schema"]
+	path = dracor-schema
+	url = https://github.com/dracor-org/dracor-schema.git
