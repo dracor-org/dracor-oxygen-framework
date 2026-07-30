@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<serialized xml:space="preserve">
+<?xml version="1.0" encoding="UTF-8"?><serialized xml:space="preserve">
 	<serializableOrderedMap>
 		<entry>
 			<String>document.types</String>
@@ -129,16 +128,16 @@
 											<String>sp</String>
 										</field>
 										<field name="description">
-											<String>Mark as &lt;sp></String>
+											<String>Mark as &lt;sp&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="smallIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accessKey">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -147,13 +146,13 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String></String>
+														<String/>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;sp xmlns="http://www.tei-c.org/ns/1.0">&lt;/sp></String>
+																<String>&lt;sp xmlns="http://www.tei-c.org/ns/1.0"&gt;&lt;/sp&gt;</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -175,16 +174,16 @@
 											<String>speaker</String>
 										</field>
 										<field name="description">
-											<String>Mark as &lt;speaker></String>
+											<String>Mark as &lt;speaker&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="smallIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accessKey">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accelerator">
 											<String>M4 L</String>
@@ -193,13 +192,13 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String></String>
+														<String/>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;speaker xmlns="http://www.tei-c.org/ns/1.0">&lt;/speaker></String>
+																<String>&lt;speaker xmlns="http://www.tei-c.org/ns/1.0"&gt;&lt;/speaker&gt;</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -221,16 +220,16 @@
 											<String>p</String>
 										</field>
 										<field name="description">
-											<String>Mark as &lt;p></String>
+											<String>Mark as &lt;p&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="smallIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accessKey">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -239,13 +238,13 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String></String>
+														<String/>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;p xmlns="http://www.tei-c.org/ns/1.0">&lt;/p></String>
+																<String>&lt;p xmlns="http://www.tei-c.org/ns/1.0"&gt;&lt;/p&gt;</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -267,16 +266,16 @@
 											<String>stage</String>
 										</field>
 										<field name="description">
-											<String>Mark as &lt;stage></String>
+											<String>Mark as &lt;stage&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="smallIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accessKey">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -285,13 +284,13 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String></String>
+														<String/>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;stage xmlns="http://www.tei-c.org/ns/1.0">&lt;/stage></String>
+																<String>&lt;stage xmlns="http://www.tei-c.org/ns/1.0"&gt;&lt;/stage&gt;</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -313,16 +312,16 @@
 											<String>scene</String>
 										</field>
 										<field name="description">
-											<String>Mark as &lt;div type="scene"></String>
+											<String>Mark as &lt;div type="scene"&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="smallIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accessKey">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accelerator">
 											<String>M4 S</String>
@@ -331,13 +330,13 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String></String>
+														<String/>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;div xmlns="http://www.tei-c.org/ns/1.0" type="scene">&lt;/div></String>
+																<String>&lt;div xmlns="http://www.tei-c.org/ns/1.0" type="scene"&gt;&lt;/div&gt;</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -359,16 +358,16 @@
 											<String>act</String>
 										</field>
 										<field name="description">
-											<String>Mark as &lt;div type="act"></String>
+											<String>Mark as &lt;div type="act"&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="smallIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accessKey">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -377,13 +376,13 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String></String>
+														<String/>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;div xmlns="http://www.tei-c.org/ns/1.0" type="act">&lt;/div></String>
+																<String>&lt;div xmlns="http://www.tei-c.org/ns/1.0" type="act"&gt;&lt;/div&gt;</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -405,16 +404,16 @@
 											<String>heading</String>
 										</field>
 										<field name="description">
-											<String>Mark title of a segment with &lt;head></String>
+											<String>Mark title of a segment with &lt;head&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="smallIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accessKey">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -423,13 +422,13 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String></String>
+														<String/>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;head xmlns="http://www.tei-c.org/ns/1.0">&lt;/head></String>
+																<String>&lt;head xmlns="http://www.tei-c.org/ns/1.0"&gt;&lt;/head&gt;</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -454,13 +453,13 @@
 											<String>Deduplication of Characters</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="smallIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accessKey">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -469,7 +468,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String></String>
+														<String/>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -497,16 +496,16 @@
 											<String>verse line</String>
 										</field>
 										<field name="description">
-											<String>Mark a verse line with &lt;l></String>
+											<String>Mark a verse line with &lt;l&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="smallIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accessKey">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -515,13 +514,13 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String></String>
+														<String/>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;l xmlns="http://www.tei-c.org/ns/1.0" type="act">&lt;/l></String>
+																<String>&lt;l xmlns="http://www.tei-c.org/ns/1.0" type="act"&gt;&lt;/l&gt;</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -543,16 +542,16 @@
 											<String>foreign</String>
 										</field>
 										<field name="description">
-											<String>Mark text as foreign term &lt;foreign></String>
+											<String>Mark text as foreign term &lt;foreign&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="smallIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accessKey">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -561,13 +560,13 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String></String>
+														<String/>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;foreign xmlns="http://www.tei-c.org/ns/1.0" xml:lang="${ask('Language (ISO)', input_type, '')}">&lt;/foreign></String>
+																<String>&lt;foreign xmlns="http://www.tei-c.org/ns/1.0" xml:lang="${ask('Language (ISO)', input_type, '')}"&gt;&lt;/foreign&gt;</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -589,16 +588,16 @@
 											<String>castList</String>
 										</field>
 										<field name="description">
-											<String>Mark text as &lt;castList></String>
+											<String>Mark text as &lt;castList&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="smallIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accessKey">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -607,13 +606,13 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String></String>
+														<String/>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;castList xmlns="http://www.tei-c.org/ns/1.0">&lt;/castList></String>
+																<String>&lt;castList xmlns="http://www.tei-c.org/ns/1.0"&gt;&lt;/castList&gt;</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -635,16 +634,16 @@
 											<String>castItem</String>
 										</field>
 										<field name="description">
-											<String>Mark text as &lt;castItem></String>
+											<String>Mark text as &lt;castItem&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="smallIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accessKey">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -653,13 +652,13 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String></String>
+														<String/>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;castItem xmlns="http://www.tei-c.org/ns/1.0">&lt;/castItem></String>
+																<String>&lt;castItem xmlns="http://www.tei-c.org/ns/1.0"&gt;&lt;/castItem&gt;</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -681,16 +680,16 @@
 											<String>castGroup</String>
 										</field>
 										<field name="description">
-											<String>Mark text as &lt;castGroup></String>
+											<String>Mark text as &lt;castGroup&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="smallIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accessKey">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -699,13 +698,13 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String></String>
+														<String/>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;castGroup xmlns="http://www.tei-c.org/ns/1.0">&lt;/castGroup></String>
+																<String>&lt;castGroup xmlns="http://www.tei-c.org/ns/1.0"&gt;&lt;/castGroup&gt;</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -727,16 +726,16 @@
 											<String>roleDesc</String>
 										</field>
 										<field name="description">
-											<String>Mark text as &lt;roleDesc></String>
+											<String>Mark text as &lt;roleDesc&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="smallIconPath">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accessKey">
-											<String></String>
+											<String/>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -745,13 +744,13 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String></String>
+														<String/>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
-																<String>&lt;roleDesc xmlns="http://www.tei-c.org/ns/1.0">&lt;/roleDesc></String>
+																<String>&lt;roleDesc xmlns="http://www.tei-c.org/ns/1.0"&gt;&lt;/roleDesc&gt;</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -804,10 +803,10 @@
 													<String>Structure</String>
 												</field>
 												<field name="accessKey">
-													<String></String>
+													<String/>
 												</field>
 												<field name="iconPath">
-													<String></String>
+													<String/>
 												</field>
 												<field name="menuEntriesDescriptorList">
 													<menuEntry-array>
@@ -859,10 +858,10 @@
 													<String>Dramatis Personae</String>
 												</field>
 												<field name="accessKey">
-													<String></String>
+													<String/>
 												</field>
 												<field name="iconPath">
-													<String></String>
+													<String/>
 												</field>
 												<field name="menuEntriesDescriptorList">
 													<menuEntry-array>
@@ -1059,7 +1058,7 @@
 									<String>*</String>
 								</field>
 								<field name="javaRuleClass">
-									<String></String>
+									<String/>
 								</field>
 								<field name="attributeLocalName">
 									<String>type</String>
@@ -1085,7 +1084,7 @@
 									<String>*</String>
 								</field>
 								<field name="javaRuleClass">
-									<String></String>
+									<String/>
 								</field>
 								<field name="attributeLocalName">
 									<String>*</String>
@@ -1111,7 +1110,7 @@
 									<String>*</String>
 								</field>
 								<field name="javaRuleClass">
-									<String></String>
+									<String/>
 								</field>
 								<field name="attributeLocalName">
 									<String>*</String>
@@ -1135,10 +1134,10 @@
 									<String>CAMENA TEI 2 DraCor (deprecated)</String>
 								</field>
 								<field name="baseURL">
-									<String></String>
+									<String/>
 								</field>
 								<field name="footerURL">
-									<String></String>
+									<String/>
 								</field>
 								<field name="fOPMethod">
 									<String>pdf</String>
@@ -1147,7 +1146,7 @@
 									<String>Apache FOP</String>
 								</field>
 								<field name="headerURL">
-									<String></String>
+									<String/>
 								</field>
 								<field name="inputXSLURL">
 									<String>${framework}/xsl/camena-tei_2_dracor-simple-tei.xsl</String>
@@ -1218,10 +1217,10 @@
 									<String>generate ParticDesc from who-attributes</String>
 								</field>
 								<field name="baseURL">
-									<String></String>
+									<String/>
 								</field>
 								<field name="footerURL">
-									<String></String>
+									<String/>
 								</field>
 								<field name="fOPMethod">
 									<String>pdf</String>
@@ -1230,7 +1229,7 @@
 									<String>Apache FOP</String>
 								</field>
 								<field name="headerURL">
-									<String></String>
+									<String/>
 								</field>
 								<field name="inputXSLURL">
 									<String>${framework}/xsl/generate_particDesc_from_who.xsl</String>
@@ -1301,10 +1300,10 @@
 									<String>Character Deduplication</String>
 								</field>
 								<field name="baseURL">
-									<String></String>
+									<String/>
 								</field>
 								<field name="footerURL">
-									<String></String>
+									<String/>
 								</field>
 								<field name="fOPMethod">
 									<String>pdf</String>
@@ -1313,10 +1312,591 @@
 									<String>Apache FOP</String>
 								</field>
 								<field name="headerURL">
-									<String></String>
+									<String/>
 								</field>
 								<field name="inputXSLURL">
 									<String>${framework}/xsl/dedupe_characters.xsl</String>
+								</field>
+								<field name="inputXMLURL">
+									<String>${currentFileURL}</String>
+								</field>
+								<field name="defaultScenario">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="isFOPPerforming">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="type">
+									<String>XSL</String>
+								</field>
+								<field name="saveAs">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="openInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="outputResource">
+									<String>${cf}</String>
+								</field>
+								<field name="openOtherLocationInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="locationToOpenInBrowserURL">
+									<null/>
+								</field>
+								<field name="openInEditor">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInHTMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInXMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInSVGPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInResultSetPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="useXSLTInput">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="xsltParams">
+									<list/>
+								</field>
+								<field name="cascadingStylesheets">
+									<String-array/>
+								</field>
+								<field name="xslTransformer">
+									<String>Saxon-PE</String>
+								</field>
+								<field name="extensionURLs">
+									<String-array/>
+								</field>
+							</scenario>
+							<scenario>
+								<field name="advancedOptionsMap">
+									<null/>
+								</field>
+								<field name="name">
+									<String>Schema migration 001: Simplify markup of licence information</String>
+								</field>
+								<field name="baseURL">
+									<String/>
+								</field>
+								<field name="footerURL">
+									<String/>
+								</field>
+								<field name="fOPMethod">
+									<String>pdf</String>
+								</field>
+								<field name="fOProcessorName">
+									<String>Apache FOP</String>
+								</field>
+								<field name="headerURL">
+									<String/>
+								</field>
+								<field name="inputXSLURL">
+									<String>${framework}/xsl/migrations/001-licence.xsl</String>
+								</field>
+								<field name="inputXMLURL">
+									<String>${currentFileURL}</String>
+								</field>
+								<field name="defaultScenario">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="isFOPPerforming">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="type">
+									<String>XSL</String>
+								</field>
+								<field name="saveAs">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="openInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="outputResource">
+									<String>${cf}</String>
+								</field>
+								<field name="openOtherLocationInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="locationToOpenInBrowserURL">
+									<null/>
+								</field>
+								<field name="openInEditor">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInHTMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInXMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInSVGPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInResultSetPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="useXSLTInput">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="xsltParams">
+									<list/>
+								</field>
+								<field name="cascadingStylesheets">
+									<String-array/>
+								</field>
+								<field name="xslTransformer">
+									<String>Saxon-PE</String>
+								</field>
+								<field name="extensionURLs">
+									<String-array/>
+								</field>
+							</scenario>
+							<scenario>
+								<field name="advancedOptionsMap">
+									<null/>
+								</field>
+								<field name="name">
+									<String>Schema migration 002: Remove type="main" from main title in the teiHeader</String>
+								</field>
+								<field name="baseURL">
+									<String/>
+								</field>
+								<field name="footerURL">
+									<String/>
+								</field>
+								<field name="fOPMethod">
+									<String>pdf</String>
+								</field>
+								<field name="fOProcessorName">
+									<String>Apache FOP</String>
+								</field>
+								<field name="headerURL">
+									<String/>
+								</field>
+								<field name="inputXSLURL">
+									<String>${framework}/xsl/migrations/002-title-type-main.xsl</String>
+								</field>
+								<field name="inputXMLURL">
+									<String>${currentFileURL}</String>
+								</field>
+								<field name="defaultScenario">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="isFOPPerforming">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="type">
+									<String>XSL</String>
+								</field>
+								<field name="saveAs">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="openInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="outputResource">
+									<String>${cf}</String>
+								</field>
+								<field name="openOtherLocationInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="locationToOpenInBrowserURL">
+									<null/>
+								</field>
+								<field name="openInEditor">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInHTMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInXMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInSVGPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInResultSetPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="useXSLTInput">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="xsltParams">
+									<list/>
+								</field>
+								<field name="cascadingStylesheets">
+									<String-array/>
+								</field>
+								<field name="xslTransformer">
+									<String>Saxon-PE</String>
+								</field>
+								<field name="extensionURLs">
+									<String-array/>
+								</field>
+							</scenario>
+							<scenario>
+								<field name="advancedOptionsMap">
+									<null/>
+								</field>
+								<field name="name">
+									<String>Schema migration 003: Replace 3-letter ISO-639 codes with 2-letter ones.</String>
+								</field>
+								<field name="baseURL">
+									<String/>
+								</field>
+								<field name="footerURL">
+									<String/>
+								</field>
+								<field name="fOPMethod">
+									<String>pdf</String>
+								</field>
+								<field name="fOProcessorName">
+									<String>Apache FOP</String>
+								</field>
+								<field name="headerURL">
+									<String/>
+								</field>
+								<field name="inputXSLURL">
+									<String>${framework}/xsl/migrations/003-xml-lang.xsl</String>
+								</field>
+								<field name="inputXMLURL">
+									<String>${currentFileURL}</String>
+								</field>
+								<field name="defaultScenario">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="isFOPPerforming">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="type">
+									<String>XSL</String>
+								</field>
+								<field name="saveAs">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="openInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="outputResource">
+									<String>${cf}</String>
+								</field>
+								<field name="openOtherLocationInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="locationToOpenInBrowserURL">
+									<null/>
+								</field>
+								<field name="openInEditor">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInHTMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInXMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInSVGPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInResultSetPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="useXSLTInput">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="xsltParams">
+									<list/>
+								</field>
+								<field name="cascadingStylesheets">
+									<String-array/>
+								</field>
+								<field name="xslTransformer">
+									<String>Saxon-PE</String>
+								</field>
+								<field name="extensionURLs">
+									<String-array/>
+								</field>
+							</scenario>
+							<scenario>
+								<field name="advancedOptionsMap">
+									<null/>
+								</field>
+								<field name="name">
+									<String>Schema migration 004: Dissolve originalSource nested in digitalSource</String>
+								</field>
+								<field name="baseURL">
+									<String/>
+								</field>
+								<field name="footerURL">
+									<String/>
+								</field>
+								<field name="fOPMethod">
+									<String>pdf</String>
+								</field>
+								<field name="fOProcessorName">
+									<String>Apache FOP</String>
+								</field>
+								<field name="headerURL">
+									<String/>
+								</field>
+								<field name="inputXSLURL">
+									<String>${framework}/xsl/migrations/004-sourcedesc.xsl</String>
+								</field>
+								<field name="inputXMLURL">
+									<String>${currentFileURL}</String>
+								</field>
+								<field name="defaultScenario">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="isFOPPerforming">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="type">
+									<String>XSL</String>
+								</field>
+								<field name="saveAs">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="openInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="outputResource">
+									<String>${cf}</String>
+								</field>
+								<field name="openOtherLocationInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="locationToOpenInBrowserURL">
+									<null/>
+								</field>
+								<field name="openInEditor">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInHTMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInXMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInSVGPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInResultSetPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="useXSLTInput">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="xsltParams">
+									<list/>
+								</field>
+								<field name="cascadingStylesheets">
+									<String-array/>
+								</field>
+								<field name="xslTransformer">
+									<String>Saxon-PE</String>
+								</field>
+								<field name="extensionURLs">
+									<String-array/>
+								</field>
+							</scenario>
+							<scenario>
+								<field name="advancedOptionsMap">
+									<null/>
+								</field>
+								<field name="name">
+									<String>Schema migration 005: Retire standOff</String>
+								</field>
+								<field name="baseURL">
+									<String/>
+								</field>
+								<field name="footerURL">
+									<String/>
+								</field>
+								<field name="fOPMethod">
+									<String>pdf</String>
+								</field>
+								<field name="fOProcessorName">
+									<String>Apache FOP</String>
+								</field>
+								<field name="headerURL">
+									<String/>
+								</field>
+								<field name="inputXSLURL">
+									<String>${framework}/xsl/migrations/005-standoff.xsl</String>
+								</field>
+								<field name="inputXMLURL">
+									<String>${currentFileURL}</String>
+								</field>
+								<field name="defaultScenario">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="isFOPPerforming">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="type">
+									<String>XSL</String>
+								</field>
+								<field name="saveAs">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="openInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="outputResource">
+									<String>${cf}</String>
+								</field>
+								<field name="openOtherLocationInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="locationToOpenInBrowserURL">
+									<null/>
+								</field>
+								<field name="openInEditor">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInHTMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInXMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInSVGPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInResultSetPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="useXSLTInput">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="xsltParams">
+									<list/>
+								</field>
+								<field name="cascadingStylesheets">
+									<String-array/>
+								</field>
+								<field name="xslTransformer">
+									<String>Saxon-PE</String>
+								</field>
+								<field name="extensionURLs">
+									<String-array/>
+								</field>
+							</scenario>
+							<scenario>
+								<field name="advancedOptionsMap">
+									<null/>
+								</field>
+								<field name="name">
+									<String>Schema migration 006: Transform teiCorpus to dracorCorpus</String>
+								</field>
+								<field name="baseURL">
+									<String/>
+								</field>
+								<field name="footerURL">
+									<String/>
+								</field>
+								<field name="fOPMethod">
+									<String>pdf</String>
+								</field>
+								<field name="fOProcessorName">
+									<String>Apache FOP</String>
+								</field>
+								<field name="headerURL">
+									<String/>
+								</field>
+								<field name="inputXSLURL">
+									<String>${framework}/xsl/migrations/006-corpus-xml.xsl</String>
+								</field>
+								<field name="inputXMLURL">
+									<String>${currentFileURL}</String>
+								</field>
+								<field name="defaultScenario">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="isFOPPerforming">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="type">
+									<String>XSL</String>
+								</field>
+								<field name="saveAs">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="openInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="outputResource">
+									<String>${cf}</String>
+								</field>
+								<field name="openOtherLocationInBrowser">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="locationToOpenInBrowserURL">
+									<null/>
+								</field>
+								<field name="openInEditor">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInHTMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInXMLPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInSVGPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="showInResultSetPane">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="useXSLTInput">
+									<Boolean>true</Boolean>
+								</field>
+								<field name="xsltParams">
+									<list/>
+								</field>
+								<field name="cascadingStylesheets">
+									<String-array/>
+								</field>
+								<field name="xslTransformer">
+									<String>Saxon-PE</String>
+								</field>
+								<field name="extensionURLs">
+									<String-array/>
+								</field>
+							</scenario>
+							<scenario>
+								<field name="advancedOptionsMap">
+									<null/>
+								</field>
+								<field name="name">
+									<String>Schema migration 007: Convert @ana Wikidata URIs on person/personGrp to &lt;idno type="wikidata"&gt;</String>
+								</field>
+								<field name="baseURL">
+									<String/>
+								</field>
+								<field name="footerURL">
+									<String/>
+								</field>
+								<field name="fOPMethod">
+									<String>pdf</String>
+								</field>
+								<field name="fOProcessorName">
+									<String>Apache FOP</String>
+								</field>
+								<field name="headerURL">
+									<String/>
+								</field>
+								<field name="inputXSLURL">
+									<String>${framework}/xsl/migrations/007-ana-to-idno.xsl</String>
 								</field>
 								<field name="inputXMLURL">
 									<String>${currentFileURL}</String>
@@ -1397,7 +1977,7 @@
 											<field name="validationEngine">
 												<validationEngine>
 													<field name="engineType">
-														<String>&lt;Default engine></String>
+														<String>&lt;Default engine&gt;</String>
 													</field>
 													<field name="allowsAutomaticValidation">
 														<Boolean>true</Boolean>

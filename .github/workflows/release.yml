@@ -11,9 +11,17 @@ jobs:
     if: github.event.release.tag_name
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          submodules: recursive
 
-      - name: Create ZIP archive
-        run: zip -r dracor.zip dracor
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Build framework
+        run: ./build
 
       - name: Upload ZIP archive
         uses: actions/upload-release-asset@e8f9f06c4b078e705bd2ea027f0926603fc9b4d5 # v1.0.2

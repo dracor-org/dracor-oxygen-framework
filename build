@@ -1,0 +1,50 @@
+#!/bin/sh
+
+# Rebuild the framework assets that are derived from dracor-schema:
+#   * dracor/schemas/schema.rng          (compiled RNG)
+#   * dracor/xsl/migrations/*.xsl        (migration stylesheets)
+#   * dracor/dracor.framework            ("Schema migration" scenarios)
+#
+# Run after updating the dracor-schema submodule to a new tag.
+
+set -eu
+
+REPO_ROOT="$(cd "$(dirname "$0")" && pwd)"
+SUBMODULE="$REPO_ROOT/dracor-schema"
+SAXON="$SUBMODULE/Stylesheets/lib/saxon10he.jar"
+
+if [ ! -d "$SUBMODULE/.git" ] && [ ! -f "$SUBMODULE/.git" ]; then
+  echo "dracor-schema submodule is not initialised."
+  echo "Run: git submodule update --init --recursive"
+  exit 1
+fi
+
+echo "==> Ensuring nested submodules are initialised"
+git -C "$REPO_ROOT" submodule update --init --recursive
+
+echo "==> Building schema in $SUBMODULE"
+(cd "$SUBMODULE" && ./build)
+
+echo "==> Copying compiled schema"
+mkdir -p "$REPO_ROOT/dracor/schemas"
+cp "$SUBMODULE/dist/dracor.rng" "$REPO_ROOT/dracor/schemas/schema.rng"
+
+echo "==> Refreshing migration stylesheets"
+rm -f "$REPO_ROOT/dracor/xsl/migrations/"*.xsl
+mkdir -p "$REPO_ROOT/dracor/xsl/migrations"
+cp "$SUBMODULE/migrations/"*.xsl "$REPO_ROOT/dracor/xsl/migrations/"
+
+echo "==> Regenerating Schema migration scenarios in dracor.framework"
+TMP="$REPO_ROOT/dracor/dracor.framework.tmp"
+java -jar "$SAXON" \
+  -s:"$REPO_ROOT/dracor/dracor.framework" \
+  -xsl:"$REPO_ROOT/update-migration-scenarios.xsl" \
+  migrations-dir="file://$REPO_ROOT/dracor/xsl/migrations/"  \
+  > "$TMP"
+mv "$TMP" "$REPO_ROOT/dracor/dracor.framework"
+
+echo "==> Packaging dracor.zip"
+rm -f "$REPO_ROOT/dracor.zip"
+(cd "$REPO_ROOT" && zip -qr dracor.zip dracor)
+
+echo "Done."
