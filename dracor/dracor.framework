@@ -131,13 +131,13 @@
 											<String>Mark as &lt;sp&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="smallIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accessKey">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -146,7 +146,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String/>
+														<String></String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -177,13 +177,13 @@
 											<String>Mark as &lt;speaker&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="smallIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accessKey">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accelerator">
 											<String>M4 L</String>
@@ -192,7 +192,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String/>
+														<String></String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -223,13 +223,13 @@
 											<String>Mark as &lt;p&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="smallIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accessKey">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -238,7 +238,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String/>
+														<String></String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -269,13 +269,13 @@
 											<String>Mark as &lt;stage&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="smallIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accessKey">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -284,7 +284,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String/>
+														<String></String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -315,13 +315,13 @@
 											<String>Mark as &lt;div type="scene"&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="smallIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accessKey">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accelerator">
 											<String>M4 S</String>
@@ -330,7 +330,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String/>
+														<String></String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -361,13 +361,13 @@
 											<String>Mark as &lt;div type="act"&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="smallIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accessKey">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -376,7 +376,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String/>
+														<String></String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -407,13 +407,13 @@
 											<String>Mark title of a segment with &lt;head&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="smallIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accessKey">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -422,7 +422,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String/>
+														<String></String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -453,13 +453,13 @@
 											<String>Deduplication of Characters</String>
 										</field>
 										<field name="largeIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="smallIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accessKey">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -468,7 +468,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String/>
+														<String></String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -499,13 +499,13 @@
 											<String>Mark a verse line with &lt;l&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="smallIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accessKey">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -514,7 +514,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String/>
+														<String></String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -545,13 +545,13 @@
 											<String>Mark text as foreign term &lt;foreign&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="smallIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accessKey">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -560,7 +560,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String/>
+														<String></String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -591,13 +591,13 @@
 											<String>Mark text as &lt;castList&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="smallIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accessKey">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -606,7 +606,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String/>
+														<String></String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -637,13 +637,13 @@
 											<String>Mark text as &lt;castItem&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="smallIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accessKey">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -652,7 +652,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String/>
+														<String></String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -683,13 +683,13 @@
 											<String>Mark text as &lt;castGroup&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="smallIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accessKey">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -698,7 +698,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String/>
+														<String></String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -729,13 +729,13 @@
 											<String>Mark text as &lt;roleDesc&gt;</String>
 										</field>
 										<field name="largeIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="smallIconPath">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accessKey">
-											<String/>
+											<String></String>
 										</field>
 										<field name="accelerator">
 											<null/>
@@ -744,7 +744,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String/>
+														<String></String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -803,10 +803,10 @@
 													<String>Structure</String>
 												</field>
 												<field name="accessKey">
-													<String/>
+													<String></String>
 												</field>
 												<field name="iconPath">
-													<String/>
+													<String></String>
 												</field>
 												<field name="menuEntriesDescriptorList">
 													<menuEntry-array>
@@ -858,10 +858,10 @@
 													<String>Dramatis Personae</String>
 												</field>
 												<field name="accessKey">
-													<String/>
+													<String></String>
 												</field>
 												<field name="iconPath">
-													<String/>
+													<String></String>
 												</field>
 												<field name="menuEntriesDescriptorList">
 													<menuEntry-array>
@@ -1058,7 +1058,7 @@
 									<String>*</String>
 								</field>
 								<field name="javaRuleClass">
-									<String/>
+									<String></String>
 								</field>
 								<field name="attributeLocalName">
 									<String>type</String>
@@ -1084,7 +1084,7 @@
 									<String>*</String>
 								</field>
 								<field name="javaRuleClass">
-									<String/>
+									<String></String>
 								</field>
 								<field name="attributeLocalName">
 									<String>*</String>
@@ -1110,7 +1110,7 @@
 									<String>*</String>
 								</field>
 								<field name="javaRuleClass">
-									<String/>
+									<String></String>
 								</field>
 								<field name="attributeLocalName">
 									<String>*</String>
@@ -1128,16 +1128,79 @@
 						<scenario-array>
 							<scenario>
 								<field name="advancedOptionsMap">
-									<null/>
+									<serializableOrderedMap>
+										<entry>
+											<String>Saxon-PE</String>
+											<xsltSaxonBAdvancedOptions>
+												<field name="allowCallsOnExtensionFunctions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="registerSaxonCEExtensions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="enableAssertions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="allowSyntaxExtensions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="showVersionWarnings">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidation">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidationRecover">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="lineNumbering">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="initialMode">
+													<null/>
+												</field>
+												<field name="initialTemplate">
+													<null/>
+												</field>
+												<field name="traceXPathExpression">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="expandAttributeDefaults">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="stripWS">
+													<String>saxon.strip.ws.none</String>
+												</field>
+												<field name="optimizationEnabled">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="useConfigFile">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="configSystemID">
+													<null/>
+												</field>
+												<field name="initializer">
+													<String></String>
+												</field>
+												<field name="profilingOutputFile">
+													<String></String>
+												</field>
+												<field name="isProfilingEnabled">
+													<Boolean>false</Boolean>
+												</field>
+											</xsltSaxonBAdvancedOptions>
+										</entry>
+									</serializableOrderedMap>
 								</field>
 								<field name="name">
 									<String>CAMENA TEI 2 DraCor (deprecated)</String>
 								</field>
 								<field name="baseURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="footerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="fOPMethod">
 									<String>pdf</String>
@@ -1146,7 +1209,7 @@
 									<String>Apache FOP</String>
 								</field>
 								<field name="headerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="inputXSLURL">
 									<String>${framework}/xsl/camena-tei_2_dracor-simple-tei.xsl</String>
@@ -1211,16 +1274,79 @@
 							</scenario>
 							<scenario>
 								<field name="advancedOptionsMap">
-									<null/>
+									<serializableOrderedMap>
+										<entry>
+											<String>Saxon-PE</String>
+											<xsltSaxonBAdvancedOptions>
+												<field name="allowCallsOnExtensionFunctions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="registerSaxonCEExtensions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="enableAssertions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="allowSyntaxExtensions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="showVersionWarnings">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidation">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidationRecover">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="lineNumbering">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="initialMode">
+													<null/>
+												</field>
+												<field name="initialTemplate">
+													<null/>
+												</field>
+												<field name="traceXPathExpression">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="expandAttributeDefaults">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="stripWS">
+													<String>saxon.strip.ws.none</String>
+												</field>
+												<field name="optimizationEnabled">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="useConfigFile">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="configSystemID">
+													<null/>
+												</field>
+												<field name="initializer">
+													<String></String>
+												</field>
+												<field name="profilingOutputFile">
+													<String></String>
+												</field>
+												<field name="isProfilingEnabled">
+													<Boolean>false</Boolean>
+												</field>
+											</xsltSaxonBAdvancedOptions>
+										</entry>
+									</serializableOrderedMap>
 								</field>
 								<field name="name">
 									<String>generate ParticDesc from who-attributes</String>
 								</field>
 								<field name="baseURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="footerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="fOPMethod">
 									<String>pdf</String>
@@ -1229,7 +1355,7 @@
 									<String>Apache FOP</String>
 								</field>
 								<field name="headerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="inputXSLURL">
 									<String>${framework}/xsl/generate_particDesc_from_who.xsl</String>
@@ -1294,16 +1420,79 @@
 							</scenario>
 							<scenario>
 								<field name="advancedOptionsMap">
-									<null/>
+									<serializableOrderedMap>
+										<entry>
+											<String>Saxon-PE</String>
+											<xsltSaxonBAdvancedOptions>
+												<field name="allowCallsOnExtensionFunctions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="registerSaxonCEExtensions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="enableAssertions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="allowSyntaxExtensions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="showVersionWarnings">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidation">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidationRecover">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="lineNumbering">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="initialMode">
+													<null/>
+												</field>
+												<field name="initialTemplate">
+													<null/>
+												</field>
+												<field name="traceXPathExpression">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="expandAttributeDefaults">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="stripWS">
+													<String>saxon.strip.ws.none</String>
+												</field>
+												<field name="optimizationEnabled">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="useConfigFile">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="configSystemID">
+													<null/>
+												</field>
+												<field name="initializer">
+													<String></String>
+												</field>
+												<field name="profilingOutputFile">
+													<String></String>
+												</field>
+												<field name="isProfilingEnabled">
+													<Boolean>false</Boolean>
+												</field>
+											</xsltSaxonBAdvancedOptions>
+										</entry>
+									</serializableOrderedMap>
 								</field>
 								<field name="name">
 									<String>Character Deduplication</String>
 								</field>
 								<field name="baseURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="footerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="fOPMethod">
 									<String>pdf</String>
@@ -1312,7 +1501,7 @@
 									<String>Apache FOP</String>
 								</field>
 								<field name="headerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="inputXSLURL">
 									<String>${framework}/xsl/dedupe_characters.xsl</String>
@@ -1377,16 +1566,79 @@
 							</scenario>
 							<scenario>
 								<field name="advancedOptionsMap">
-									<null/>
+									<serializableOrderedMap>
+										<entry>
+											<String>Saxon-PE</String>
+											<xsltSaxonBAdvancedOptions>
+												<field name="allowCallsOnExtensionFunctions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="registerSaxonCEExtensions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="enableAssertions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="allowSyntaxExtensions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="showVersionWarnings">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidation">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidationRecover">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="lineNumbering">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="initialMode">
+													<null/>
+												</field>
+												<field name="initialTemplate">
+													<null/>
+												</field>
+												<field name="traceXPathExpression">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="expandAttributeDefaults">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="stripWS">
+													<String>saxon.strip.ws.none</String>
+												</field>
+												<field name="optimizationEnabled">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="useConfigFile">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="configSystemID">
+													<null/>
+												</field>
+												<field name="initializer">
+													<String></String>
+												</field>
+												<field name="profilingOutputFile">
+													<null/>
+												</field>
+												<field name="isProfilingEnabled">
+													<Boolean>false</Boolean>
+												</field>
+											</xsltSaxonBAdvancedOptions>
+										</entry>
+									</serializableOrderedMap>
 								</field>
 								<field name="name">
 									<String>Schema migration 001: Simplify markup of licence information</String>
 								</field>
 								<field name="baseURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="footerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="fOPMethod">
 									<String>pdf</String>
@@ -1395,7 +1647,7 @@
 									<String>Apache FOP</String>
 								</field>
 								<field name="headerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="inputXSLURL">
 									<String>${framework}/xsl/migrations/001-licence.xsl</String>
@@ -1460,16 +1712,79 @@
 							</scenario>
 							<scenario>
 								<field name="advancedOptionsMap">
-									<null/>
+									<serializableOrderedMap>
+										<entry>
+											<String>Saxon-PE</String>
+											<xsltSaxonBAdvancedOptions>
+												<field name="allowCallsOnExtensionFunctions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="registerSaxonCEExtensions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="enableAssertions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="allowSyntaxExtensions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="showVersionWarnings">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidation">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidationRecover">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="lineNumbering">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="initialMode">
+													<null/>
+												</field>
+												<field name="initialTemplate">
+													<null/>
+												</field>
+												<field name="traceXPathExpression">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="expandAttributeDefaults">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="stripWS">
+													<String>saxon.strip.ws.none</String>
+												</field>
+												<field name="optimizationEnabled">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="useConfigFile">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="configSystemID">
+													<null/>
+												</field>
+												<field name="initializer">
+													<String></String>
+												</field>
+												<field name="profilingOutputFile">
+													<null/>
+												</field>
+												<field name="isProfilingEnabled">
+													<Boolean>false</Boolean>
+												</field>
+											</xsltSaxonBAdvancedOptions>
+										</entry>
+									</serializableOrderedMap>
 								</field>
 								<field name="name">
 									<String>Schema migration 002: Remove type="main" from main title in the teiHeader</String>
 								</field>
 								<field name="baseURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="footerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="fOPMethod">
 									<String>pdf</String>
@@ -1478,7 +1793,7 @@
 									<String>Apache FOP</String>
 								</field>
 								<field name="headerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="inputXSLURL">
 									<String>${framework}/xsl/migrations/002-title-type-main.xsl</String>
@@ -1543,16 +1858,79 @@
 							</scenario>
 							<scenario>
 								<field name="advancedOptionsMap">
-									<null/>
+									<serializableOrderedMap>
+										<entry>
+											<String>Saxon-PE</String>
+											<xsltSaxonBAdvancedOptions>
+												<field name="allowCallsOnExtensionFunctions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="registerSaxonCEExtensions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="enableAssertions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="allowSyntaxExtensions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="showVersionWarnings">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidation">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidationRecover">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="lineNumbering">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="initialMode">
+													<null/>
+												</field>
+												<field name="initialTemplate">
+													<null/>
+												</field>
+												<field name="traceXPathExpression">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="expandAttributeDefaults">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="stripWS">
+													<String>saxon.strip.ws.none</String>
+												</field>
+												<field name="optimizationEnabled">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="useConfigFile">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="configSystemID">
+													<null/>
+												</field>
+												<field name="initializer">
+													<String></String>
+												</field>
+												<field name="profilingOutputFile">
+													<null/>
+												</field>
+												<field name="isProfilingEnabled">
+													<Boolean>false</Boolean>
+												</field>
+											</xsltSaxonBAdvancedOptions>
+										</entry>
+									</serializableOrderedMap>
 								</field>
 								<field name="name">
 									<String>Schema migration 003: Replace 3-letter ISO-639 codes with 2-letter ones.</String>
 								</field>
 								<field name="baseURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="footerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="fOPMethod">
 									<String>pdf</String>
@@ -1561,7 +1939,7 @@
 									<String>Apache FOP</String>
 								</field>
 								<field name="headerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="inputXSLURL">
 									<String>${framework}/xsl/migrations/003-xml-lang.xsl</String>
@@ -1626,16 +2004,79 @@
 							</scenario>
 							<scenario>
 								<field name="advancedOptionsMap">
-									<null/>
+									<serializableOrderedMap>
+										<entry>
+											<String>Saxon-PE</String>
+											<xsltSaxonBAdvancedOptions>
+												<field name="allowCallsOnExtensionFunctions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="registerSaxonCEExtensions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="enableAssertions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="allowSyntaxExtensions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="showVersionWarnings">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidation">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidationRecover">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="lineNumbering">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="initialMode">
+													<null/>
+												</field>
+												<field name="initialTemplate">
+													<null/>
+												</field>
+												<field name="traceXPathExpression">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="expandAttributeDefaults">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="stripWS">
+													<String>saxon.strip.ws.none</String>
+												</field>
+												<field name="optimizationEnabled">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="useConfigFile">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="configSystemID">
+													<null/>
+												</field>
+												<field name="initializer">
+													<String></String>
+												</field>
+												<field name="profilingOutputFile">
+													<null/>
+												</field>
+												<field name="isProfilingEnabled">
+													<Boolean>false</Boolean>
+												</field>
+											</xsltSaxonBAdvancedOptions>
+										</entry>
+									</serializableOrderedMap>
 								</field>
 								<field name="name">
 									<String>Schema migration 004: Dissolve originalSource nested in digitalSource</String>
 								</field>
 								<field name="baseURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="footerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="fOPMethod">
 									<String>pdf</String>
@@ -1644,7 +2085,7 @@
 									<String>Apache FOP</String>
 								</field>
 								<field name="headerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="inputXSLURL">
 									<String>${framework}/xsl/migrations/004-sourcedesc.xsl</String>
@@ -1709,16 +2150,79 @@
 							</scenario>
 							<scenario>
 								<field name="advancedOptionsMap">
-									<null/>
+									<serializableOrderedMap>
+										<entry>
+											<String>Saxon-PE</String>
+											<xsltSaxonBAdvancedOptions>
+												<field name="allowCallsOnExtensionFunctions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="registerSaxonCEExtensions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="enableAssertions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="allowSyntaxExtensions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="showVersionWarnings">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidation">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidationRecover">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="lineNumbering">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="initialMode">
+													<null/>
+												</field>
+												<field name="initialTemplate">
+													<null/>
+												</field>
+												<field name="traceXPathExpression">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="expandAttributeDefaults">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="stripWS">
+													<String>saxon.strip.ws.none</String>
+												</field>
+												<field name="optimizationEnabled">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="useConfigFile">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="configSystemID">
+													<null/>
+												</field>
+												<field name="initializer">
+													<String></String>
+												</field>
+												<field name="profilingOutputFile">
+													<null/>
+												</field>
+												<field name="isProfilingEnabled">
+													<Boolean>false</Boolean>
+												</field>
+											</xsltSaxonBAdvancedOptions>
+										</entry>
+									</serializableOrderedMap>
 								</field>
 								<field name="name">
 									<String>Schema migration 005: Retire standOff</String>
 								</field>
 								<field name="baseURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="footerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="fOPMethod">
 									<String>pdf</String>
@@ -1727,7 +2231,7 @@
 									<String>Apache FOP</String>
 								</field>
 								<field name="headerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="inputXSLURL">
 									<String>${framework}/xsl/migrations/005-standoff.xsl</String>
@@ -1792,16 +2296,79 @@
 							</scenario>
 							<scenario>
 								<field name="advancedOptionsMap">
-									<null/>
+									<serializableOrderedMap>
+										<entry>
+											<String>Saxon-PE</String>
+											<xsltSaxonBAdvancedOptions>
+												<field name="allowCallsOnExtensionFunctions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="registerSaxonCEExtensions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="enableAssertions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="allowSyntaxExtensions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="showVersionWarnings">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidation">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidationRecover">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="lineNumbering">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="initialMode">
+													<null/>
+												</field>
+												<field name="initialTemplate">
+													<null/>
+												</field>
+												<field name="traceXPathExpression">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="expandAttributeDefaults">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="stripWS">
+													<String>saxon.strip.ws.none</String>
+												</field>
+												<field name="optimizationEnabled">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="useConfigFile">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="configSystemID">
+													<null/>
+												</field>
+												<field name="initializer">
+													<String></String>
+												</field>
+												<field name="profilingOutputFile">
+													<null/>
+												</field>
+												<field name="isProfilingEnabled">
+													<Boolean>false</Boolean>
+												</field>
+											</xsltSaxonBAdvancedOptions>
+										</entry>
+									</serializableOrderedMap>
 								</field>
 								<field name="name">
 									<String>Schema migration 006: Transform teiCorpus to dracorCorpus</String>
 								</field>
 								<field name="baseURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="footerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="fOPMethod">
 									<String>pdf</String>
@@ -1810,7 +2377,7 @@
 									<String>Apache FOP</String>
 								</field>
 								<field name="headerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="inputXSLURL">
 									<String>${framework}/xsl/migrations/006-corpus-xml.xsl</String>
@@ -1875,16 +2442,79 @@
 							</scenario>
 							<scenario>
 								<field name="advancedOptionsMap">
-									<null/>
+									<serializableOrderedMap>
+										<entry>
+											<String>Saxon-PE</String>
+											<xsltSaxonBAdvancedOptions>
+												<field name="allowCallsOnExtensionFunctions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="registerSaxonCEExtensions">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="enableAssertions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="allowSyntaxExtensions">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="showVersionWarnings">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidation">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="dtdSourceValidationRecover">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="lineNumbering">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="initialMode">
+													<null/>
+												</field>
+												<field name="initialTemplate">
+													<null/>
+												</field>
+												<field name="traceXPathExpression">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="expandAttributeDefaults">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="stripWS">
+													<String>saxon.strip.ws.none</String>
+												</field>
+												<field name="optimizationEnabled">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="useConfigFile">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="configSystemID">
+													<null/>
+												</field>
+												<field name="initializer">
+													<String></String>
+												</field>
+												<field name="profilingOutputFile">
+													<null/>
+												</field>
+												<field name="isProfilingEnabled">
+													<Boolean>false</Boolean>
+												</field>
+											</xsltSaxonBAdvancedOptions>
+										</entry>
+									</serializableOrderedMap>
 								</field>
 								<field name="name">
 									<String>Schema migration 007: Convert @ana Wikidata URIs on person/personGrp to &lt;idno type="wikidata"&gt;</String>
 								</field>
 								<field name="baseURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="footerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="fOPMethod">
 									<String>pdf</String>
@@ -1893,7 +2523,7 @@
 									<String>Apache FOP</String>
 								</field>
 								<field name="headerURL">
-									<String/>
+									<String></String>
 								</field>
 								<field name="inputXSLURL">
 									<String>${framework}/xsl/migrations/007-ana-to-idno.xsl</String>

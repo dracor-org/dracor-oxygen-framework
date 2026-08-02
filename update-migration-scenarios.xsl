@@ -39,6 +39,10 @@
   <xsl:variable name="T7" as="xs:string" select="concat($T6, '&#9;')"/>
   <xsl:variable name="T8" as="xs:string" select="concat($T7, '&#9;')"/>
   <xsl:variable name="T9" as="xs:string" select="concat($T8, '&#9;')"/>
+  <xsl:variable name="T10" as="xs:string" select="concat($T9, '&#9;')"/>
+  <xsl:variable name="T11" as="xs:string" select="concat($T10, '&#9;')"/>
+  <xsl:variable name="T12" as="xs:string" select="concat($T11, '&#9;')"/>
+  <xsl:variable name="T13" as="xs:string" select="concat($T12, '&#9;')"/>
 
   <xsl:variable name="migrations" as="xs:string*">
     <xsl:perform-sort
@@ -109,9 +113,7 @@
 
     <xsl:value-of select="concat($NL, $T7)"/>
     <scenario>
-      <xsl:call-template name="field-null">
-        <xsl:with-param name="n" select="'advancedOptionsMap'"/>
-      </xsl:call-template>
+      <xsl:call-template name="saxon-advanced-options"/>
       <xsl:call-template name="field-string">
         <xsl:with-param name="n" select="'name'"/>
         <xsl:with-param name="v" select="$name"/>
@@ -266,6 +268,149 @@
       <xsl:value-of select="concat($NL, $T9)"/>
       <null/>
       <xsl:value-of select="concat($NL, $T8)"/>
+    </field>
+  </xsl:template>
+
+  <!-- Emit the scenario's advancedOptionsMap with Saxon-PE settings.
+       Notably expandAttributeDefaults=false, which disables the RelaxNG
+       DTD-compatibility a:defaultValue expansion that Oxygen otherwise
+       injects into the input tree before Saxon sees it (and which
+       would leak schema-declared attribute defaults like full="yes",
+       status="draft", part="N" into the migration output). All other
+       fields carry Oxygen's usual scenario defaults. -->
+  <xsl:template name="saxon-advanced-options">
+    <xsl:value-of select="concat($NL, $T8)"/>
+    <field name="advancedOptionsMap">
+      <xsl:value-of select="concat($NL, $T9)"/>
+      <serializableOrderedMap>
+        <xsl:value-of select="concat($NL, $T10)"/>
+        <entry>
+          <xsl:value-of select="concat($NL, $T11)"/>
+          <String>Saxon-PE</String>
+          <xsl:value-of select="concat($NL, $T11)"/>
+          <xsltSaxonBAdvancedOptions>
+            <xsl:call-template name="saxon-opt-bool">
+              <xsl:with-param name="n" select="'allowCallsOnExtensionFunctions'"/>
+              <xsl:with-param name="v" select="'true'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-bool">
+              <xsl:with-param name="n" select="'registerSaxonCEExtensions'"/>
+              <xsl:with-param name="v" select="'true'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-bool">
+              <xsl:with-param name="n" select="'enableAssertions'"/>
+              <xsl:with-param name="v" select="'false'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-bool">
+              <xsl:with-param name="n" select="'allowSyntaxExtensions'"/>
+              <xsl:with-param name="v" select="'false'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-bool">
+              <xsl:with-param name="n" select="'showVersionWarnings'"/>
+              <xsl:with-param name="v" select="'false'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-bool">
+              <xsl:with-param name="n" select="'dtdSourceValidation'"/>
+              <xsl:with-param name="v" select="'false'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-bool">
+              <xsl:with-param name="n" select="'dtdSourceValidationRecover'"/>
+              <xsl:with-param name="v" select="'false'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-bool">
+              <xsl:with-param name="n" select="'lineNumbering'"/>
+              <xsl:with-param name="v" select="'false'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-null">
+              <xsl:with-param name="n" select="'initialMode'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-null">
+              <xsl:with-param name="n" select="'initialTemplate'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-bool">
+              <xsl:with-param name="n" select="'traceXPathExpression'"/>
+              <xsl:with-param name="v" select="'true'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-bool">
+              <xsl:with-param name="n" select="'expandAttributeDefaults'"/>
+              <xsl:with-param name="v" select="'false'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-string">
+              <xsl:with-param name="n" select="'stripWS'"/>
+              <xsl:with-param name="v" select="'saxon.strip.ws.none'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-bool">
+              <xsl:with-param name="n" select="'optimizationEnabled'"/>
+              <xsl:with-param name="v" select="'true'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-bool">
+              <xsl:with-param name="n" select="'useConfigFile'"/>
+              <xsl:with-param name="v" select="'false'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-null">
+              <xsl:with-param name="n" select="'configSystemID'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-string">
+              <xsl:with-param name="n" select="'initializer'"/>
+              <xsl:with-param name="v" select="''"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-null">
+              <xsl:with-param name="n" select="'profilingOutputFile'"/>
+            </xsl:call-template>
+            <xsl:call-template name="saxon-opt-bool">
+              <xsl:with-param name="n" select="'isProfilingEnabled'"/>
+              <xsl:with-param name="v" select="'false'"/>
+            </xsl:call-template>
+            <xsl:value-of select="concat($NL, $T11)"/>
+          </xsltSaxonBAdvancedOptions>
+          <xsl:value-of select="concat($NL, $T10)"/>
+        </entry>
+        <xsl:value-of select="concat($NL, $T9)"/>
+      </serializableOrderedMap>
+      <xsl:value-of select="concat($NL, $T8)"/>
+    </field>
+  </xsl:template>
+
+  <xsl:template name="saxon-opt-bool">
+    <xsl:param name="n" as="xs:string"/>
+    <xsl:param name="v" as="xs:string"/>
+    <xsl:value-of select="concat($NL, $T12)"/>
+    <field name="{$n}">
+      <xsl:value-of select="concat($NL, $T13)"/>
+      <Boolean>
+        <xsl:value-of select="$v"/>
+      </Boolean>
+      <xsl:value-of select="concat($NL, $T12)"/>
+    </field>
+  </xsl:template>
+
+  <xsl:template name="saxon-opt-string">
+    <xsl:param name="n" as="xs:string"/>
+    <xsl:param name="v" as="xs:string"/>
+    <xsl:value-of select="concat($NL, $T12)"/>
+    <field name="{$n}">
+      <xsl:value-of select="concat($NL, $T13)"/>
+      <xsl:choose>
+        <xsl:when test="$v = ''">
+          <String/>
+        </xsl:when>
+        <xsl:otherwise>
+          <String>
+            <xsl:value-of select="$v"/>
+          </String>
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:value-of select="concat($NL, $T12)"/>
+    </field>
+  </xsl:template>
+
+  <xsl:template name="saxon-opt-null">
+    <xsl:param name="n" as="xs:string"/>
+    <xsl:value-of select="concat($NL, $T12)"/>
+    <field name="{$n}">
+      <xsl:value-of select="concat($NL, $T13)"/>
+      <null/>
+      <xsl:value-of select="concat($NL, $T12)"/>
     </field>
   </xsl:template>
 

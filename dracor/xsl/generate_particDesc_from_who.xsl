@@ -5,7 +5,7 @@
     exclude-result-prefixes="xs"
     version="2.0">
     
-    <xsl:output encoding="UTF-8" indent="yes"/>
+    <xsl:output method="xml"/>
     
     <!-- 
         Populate particDesc based on @who attributes on <sp> elements

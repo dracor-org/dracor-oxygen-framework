@@ -41,6 +41,11 @@ java -jar "$SAXON" \
   -xsl:"$REPO_ROOT/update-migration-scenarios.xsl" \
   migrations-dir="file://$REPO_ROOT/dracor/xsl/migrations/"  \
   > "$TMP"
+# Saxon's XML serializer collapses empty elements to self-closing form
+# (<String/>), but Oxygen writes and expects <String></String>.
+# Re-expand so ./build output round-trips through Oxygen without churn.
+sed -i.bak 's|<String/>|<String></String>|g' "$TMP"
+rm -f "$TMP.bak"
 mv "$TMP" "$REPO_ROOT/dracor/dracor.framework"
 
 echo "==> Packaging dracor.zip"
