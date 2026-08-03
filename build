@@ -1,20 +1,21 @@
 #!/bin/sh
 
-# Rebuild the framework assets that are derived from dracor-schema:
+# Rebuild the framework assets that are derived from the dracor-schema
+# submodule (vendored under ./schema):
 #   * dracor/schemas/schema.rng          (compiled RNG)
 #   * dracor/xsl/migrations/*.xsl        (migration stylesheets)
 #   * dracor/dracor.framework            ("Schema migration" scenarios)
 #
-# Run after updating the dracor-schema submodule to a new tag.
+# Run after updating the submodule to a new tag.
 
 set -eu
 
 REPO_ROOT="$(cd "$(dirname "$0")" && pwd)"
-SUBMODULE="$REPO_ROOT/dracor-schema"
+SUBMODULE="$REPO_ROOT/schema"
 SAXON="$SUBMODULE/Stylesheets/lib/saxon10he.jar"
 
 if [ ! -d "$SUBMODULE/.git" ] && [ ! -f "$SUBMODULE/.git" ]; then
-  echo "dracor-schema submodule is not initialised."
+  echo "schema submodule is not initialised."
   echo "Run: git submodule update --init --recursive"
   exit 1
 fi

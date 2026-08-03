@@ -28,7 +28,7 @@ If you want to add features to the framework or fix bugs, instead of using a
 released version, you can add the add-on from a local working directory.
 
 The [dracor-schema](https://github.com/dracor-org/dracor-schema) repo is
-vendored as a git submodule under [`dracor-schema/`](dracor-schema/). The
+vendored as a git submodule under [`schema/`](schema/). The
 schema-derived assets that the framework needs at runtime —
 `dracor/schemas/schema.rng`, `dracor/xsl/migrations/*.xsl`, and the
 `Schema migration ###: …` transformation scenarios inside
@@ -63,11 +63,11 @@ To cut a release against a new dracor-schema version:
 
 1. Bump the submodule to the target tag:
    ```sh
-   cd dracor-schema
+   cd schema
    git fetch --tags
    git checkout 1.6.0   # or whatever tag
    cd ..
-   git add dracor-schema
+   git add schema
    ```
 2. Bump the schema version referenced in the validation scenario in
    `dracor/dracor.framework` (search for the current version string, e.g.
